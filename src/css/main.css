@@ -1,0 +1,143 @@
+:root {
+  --background: black;
+  --text: white;
+  --text-dark: black;
+  --title-size: 25px;
+  --font-size: 18px;
+  --margin-left: 25px;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.title {
+  align-content: center;
+  color: red;
+  font-size: var(--title-size);
+  margin-left: var(--margin-left);
+}
+
+h2 {
+  margin-left: var(--margin-left);
+}
+
+.list-point {
+  margin-bottom: 15px;
+}
+
+a {
+  color: var(--text);
+  font-size: var(--font-size);
+}
+
+a:visited {
+  color: gray;
+}
+
+a:hover,
+a:active {
+  color: white;
+}
+
+/*mark1-7 newton color sequence ROYGBIV*/
+.mark-1 {
+  background-color: red;
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+.mark-2 {
+  background-color: orange;
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+.mark-3 {
+  background-color: yellow;
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+.mark-4 {
+  background-color: green;
+  color: var(--text);
+  font-weight: bold;
+}
+
+.mark-5 {
+  background-color: blue;
+  color: var(--text);
+  font-weight: bold;
+}
+
+.mark-6 {
+  background-color: indigo;
+  color: var(--text);
+  font-weight: bold;
+}
+
+.mark-7 {
+  background-color: violet;
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+table,
+tr,
+th,
+td,
+caption {
+  border: 1px solid #eee;
+  font-family: 'Courier New', Courier, monospace;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+
+.btn-copy {
+  width: 20px;
+  height: 20px;
+  border-radius: 90%;
+  background-color: rgb(90, 85, 85);
+  margin-right: 10px;
+}
+
+.btn-copy:active {
+  background-color: gold;
+  box-shadow: 2px 2px gold;
+  transform: translateY(1px);
+}
+
+.code {
+  font-family: Consolas;
+  display: inline-block;
+  color: var(--text);
+  font-size: var(--font-size);
+  margin: 2px;
+}
+
+p {
+  font-size: var(--font-size);
+}
+
+.desc {
+  margin-left: var(--margin-left);
+}
+
+li {
+  font-size: var(--font-size);
+  margin-left: var(--margin-left);
+}
+
+summary {
+  font-size: var(--font-size);
+}
+
+h2 {
+  font-size: var(--font-size);
+}
+
+.hide {
+  display: none;
+}

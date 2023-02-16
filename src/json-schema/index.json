@@ -1,0 +1,38 @@
+{
+  "nav": [
+    {
+      "text": "a"
+    },
+    {
+        "text": "b"
+    }
+  ],
+  "sections": [
+    {
+      "text": "a",
+      "links": [
+        {
+          "link": "",
+          "text": ""
+        },
+        {
+          "link": "",
+          "text": ""
+        }
+      ]
+    },
+    {
+        "text": "b",
+        "links": [
+            {
+                "link": "",
+                "text": ""
+            },
+            {
+                "link": "",
+                "text": ""
+            }
+        ]
+    }
+  ]
+}

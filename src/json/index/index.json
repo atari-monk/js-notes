@@ -1,0 +1,26 @@
+{
+  "nav": [
+    {
+      "text": "Coding"
+    }
+  ],
+  "sections": [
+    {
+      "text": "Coding",
+      "links": [
+        {
+          "link": "index.html?page=index/net",
+          "text": ".Net"
+        },
+        {
+          "link": "index.html?page=index/web-dev",
+          "text": "Web Dev"
+        },
+        {
+          "link": "notes.html?page=note/voting-app",
+          "text": "Voting App deploy to azure"
+        }
+      ]
+    }
+  ]
+}

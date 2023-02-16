@@ -1,0 +1,212 @@
+{
+  "title": "Nuget",
+  "nav": [
+    {
+      "text": "Source"
+    },
+    {
+      "text": "Description"
+    },
+    {
+      "text": "Preconditions"
+    },
+    {
+      "text": "Notes"
+    },
+    {
+      "text": "Summary"
+    }
+  ],
+  "sections": {
+    "source": {
+      "text": "Source",
+      "links": [
+        {
+          "link": "https://learn.microsoft.com/en-us/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli",
+          "text": "Source Tutorial"
+        },
+        {
+          "link": "https://stackoverflow.com/questions/43400069/add-a-package-with-a-local-package-file-in-dotnet",
+          "text": "Add a package with a local package file in 'dotnet'"
+        },
+        {
+          "link": "https://github.com/dasMulli/LocalNupkgExample",
+          "text": "Local Nupkg Example"
+        }
+      ]
+    },
+    "desc": {
+      "text": "Description",
+      "desc": [
+        "I use many libs across my projects.",
+        "They are build to Build folder.",
+        "They are referenced in csproj files.",
+        "Local nuget would remove explicit path from refs in csproj.",
+        "Therefore this look into nugets."
+      ]
+    },
+    "precondition": {
+      "text": "Preconditions",
+      "list": [
+        "<a href='https://dotnet.microsoft.com/en-us/download'>.NET SDK</a>",
+        "<a href='https://learn.microsoft.com/en-us/nuget/nuget-org/individual-accounts#add-a-new-individual-account'>nuget.org free account</a>"
+      ]
+    }
+  },
+  "notes": [
+    {
+      "text": "Notes",
+      "points": [
+        {
+          "text": [
+            "Create new github repo"
+          ]
+        },
+        {
+          "text": [
+            "Open folder with VSCode"
+          ]
+        },
+        {
+          "text": [
+            "Setup project."
+          ],
+          "codes": [
+            {
+              "format": [
+                "dotnet new sln",
+                "dotnet new classlib -n Connection.Builder",
+                "dotnet sln add ./Connection.Builder/"
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "In csproj file set properties describing nuget"
+          ],
+          "codes": [
+            {
+              "format": [
+                "&lt;PackageId&gt;{0}&lt;/PackageId&gt;&lt;br&gt;&lt;Version&gt;{1}&lt;/Version&gt;&lt;br&gt;&lt;Authors&gt;{2}&lt;/Authors&gt;&lt;br&gt;&lt;Company&gt;{3}&lt;/Company&gt;&lt;br&gt;&lt;PackageTags&gt;{4}&lt;/PackageTags&gt;&lt;br&gt;&lt;Description&gt;{5}&lt;/Description&gt;"
+              ],
+              "params": [
+                {
+                  "name": "Connection.Builder",
+                  "desc": "Id name, unique in nuget.org"
+                },
+                {
+                  "name": "1.0.0",
+                  "desc": "version"
+                },
+                {
+                  "name": "atari-monk",
+                  "desc": "author"
+                },
+                {
+                  "name": "x",
+                  "desc": "company name"
+                },
+                {
+                  "name": "connection string;builder",
+                  "desc": "tags important for searching nuget"
+                },
+                {
+                  "name": "Builds ConnectionString.",
+                  "desc": "description"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Build"
+          ],
+          "codes": [
+            {
+              "format": [
+                "dotnet build"
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Produce nuget file with dotnet cli."
+          ],
+          "codes": [
+            {
+              "format": [
+                "cd C:\\atari-monk\\Code\\connection-builder\\Connection.Builder",
+                "dotnet nuget locals all --clear",
+                "dotnet nuget locals temp -c",
+                "dotnet nuget locals global-packages -c",
+                "dotnet restore"
+              ],
+              "params": [
+                {
+                  "desc": "todo: this is prolly not needed (invesigate source)"
+                }
+              ]
+            },
+            {
+              "format": [
+                "dotnet pack -c Release -o {0}"
+              ],
+              "params": [
+                {
+                  "name": "C:\\atari-monk\\Build\\nugets",
+                  "desc": "build path"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "In target csproj file, add local nuget source. (also nuget.org)"
+          ],
+          "codes": [
+            {
+              "format": [
+                "&lt;RestoreSources&gt;$(RestoreSources);C:\\atari-monk\\Build\\nugets;https://api.nuget.org/v3/index.json&lt;/RestoreSources&gt;"
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Consume nuget in target project."
+          ],
+          "codes": [
+            {
+              "format": [
+                "cd C:\\atari-monk\\Code\\repo\\proj"
+              ]
+            },
+            {
+              "format": [
+                "dotnet add package {0}"
+              ],
+              "params": [
+                {
+                  "name": "Connection.Builder",
+                  "desc": "PackageId"
+                }
+              ]
+            },
+            {
+              "format": [
+                "dotnet restore"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": [
+    "Local nuget proved to be handy."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "nav": [
+    {
+      "text": "General"
+    }
+  ],
+  "sections": [
+    {
+      "text": "General",
+      "links": [
+        {
+          "link": "notes.html?page=note/node-js-qs",
+          "text": "Node js template app, deploy on azure"
+        },
+        {
+          "link": "notes.html?page=note/socket-io-qs",
+          "text": "Socket.IO template app, deploy on azure."
+        },
+        {
+          "link": "notes.html?page=note/sql-quiz",
+          "text": "Sql quiz"
+        },
+        {
+          "link": "notes.html?page=note/html-entry",
+          "text": "Html Beginner Tutorial"
+        },
+        {
+          "link": "notes.html?page=note/js-game-entry",
+          "text": "JavaScript Game Development Course for Beginners"
+        }
+      ]
+    }
+  ]
+}
