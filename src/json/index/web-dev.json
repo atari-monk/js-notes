@@ -2,16 +2,15 @@
   "nav": [
     {
       "text": "General"
+    },
+    {
+      "text": "Node.js"
     }
   ],
   "sections": [
     {
       "text": "General",
       "links": [
-        {
-          "link": "notes.html?page=note/node-js-qs",
-          "text": "Node js template app, deploy on azure"
-        },
         {
           "link": "notes.html?page=note/socket-io-qs",
           "text": "Socket.IO template app, deploy on azure."
@@ -27,6 +26,23 @@
         {
           "link": "notes.html?page=note/js-game-entry",
           "text": "JavaScript Game Development Course for Beginners"
+        },
+        {
+          "link": "notes.html?page=note/web-ext",
+          "text": "VSCode WebDev Extensions"
+        }
+      ]
+    },
+    {
+      "text": "Node.js",
+      "links": [
+        {
+          "link": "notes.html?page=note/node-js-upd",
+          "text": "Update with npm"
+        },
+        {
+          "link": "notes.html?page=note/node-js-qs",
+          "text": "Node js template app, deploy on azure"
         }
       ]
     }

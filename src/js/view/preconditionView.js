@@ -16,7 +16,7 @@ export class PreconditionView extends View {
           )
           .join("<br>")}
         </ol>
-      </section>`;
+      </section><hr>`;
   }
 }
 
