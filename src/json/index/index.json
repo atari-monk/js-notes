@@ -2,6 +2,9 @@
   "nav": [
     {
       "text": "Coding"
+    },
+    {
+      "text": "Software"
     }
   ],
   "sections": [
@@ -23,6 +26,15 @@
         {
           "link": "notes.html?page=note/vscode-keys",
           "text": "VSCode keys"
+        }
+      ]
+    },
+    {
+      "text": "Software",
+      "links": [
+        {
+          "link": "notes.html?page=note/win-11",
+          "text": "Windows 11"
         }
       ]
     }
