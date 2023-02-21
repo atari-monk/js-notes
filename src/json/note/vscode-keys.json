@@ -1,0 +1,120 @@
+{
+  "title": "VSCode keys",
+  "nav": [
+    {
+      "text": "Source"
+    },
+    {
+      "text": "Description"
+    },
+    {
+      "text": "Preconditions"
+    },
+    {
+      "text": "Notes"
+    },
+    {
+      "text": "Summary"
+    }
+  ],
+  "sections": {
+    "source": {
+      "text": "Source",
+      "links": [
+        {
+          "link": "",
+          "text": "Source Tutorial"
+        },
+        {
+          "link": "",
+          "text": ""
+        }
+      ]
+    },
+    "desc": {
+      "text": "Description",
+      "desc": [
+        "",
+        ""
+      ]
+    },
+    "precondition": {
+      "text": "Preconditions",
+      "list": [
+        "",
+        ""
+      ]
+    }
+  },
+  "notes": [
+    {
+      "text": "Notes",
+      "points": [
+        {
+          "text": [
+            "Keys"
+          ],
+          "codes": [
+            {
+              "format": [
+                "{0}",
+                "{1}",
+                "{2}"
+              ],
+              "params": [
+                {
+                  "name": "ctrl-`",
+                  "desc": "toggle console"
+                },
+                {
+                  "name": "ctrl-b",
+                  "desc": "toggle explorer"
+                },
+                {
+                  "name": "Win + .",
+                  "desc": "emojis dialog"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            ""
+          ],
+          "codes": [
+            {
+              "format": [
+                ""
+              ]
+            },
+            {
+              "format": [
+                ""
+              ]
+            },
+            {
+              "format": [
+                ""
+              ],
+              "params": [
+                {
+                  "name": "",
+                  "desc": ""
+                },
+                {
+                  "name": "",
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": [
+    "",
+    ""
+  ]
+}

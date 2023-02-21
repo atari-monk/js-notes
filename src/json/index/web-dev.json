@@ -30,6 +30,10 @@
         {
           "link": "notes.html?page=note/web-ext",
           "text": "VSCode WebDev Extensions"
+        },
+        {
+          "link": "notes.html?page=note/typescript-lessons",
+          "text": "TypeScript Learning"
         }
       ]
     },

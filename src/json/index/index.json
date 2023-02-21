@@ -19,6 +19,10 @@
         {
           "link": "notes.html?page=note/voting-app",
           "text": "Voting App deploy to azure"
+        },
+        {
+          "link": "notes.html?page=note/vscode-keys",
+          "text": "VSCode keys"
         }
       ]
     }
