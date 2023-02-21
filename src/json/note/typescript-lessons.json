@@ -209,12 +209,9 @@
           "codes": [
             {
               "format": [
-                "type inference, annotation"
-              ]
-            },
-            {
-              "format": [
-                "{0}"
+                "type inference, annotation",
+                "{0}",
+                "enums are addition to js language and runtime (unlike rest of ts)"
               ],
               "params": [
                 {
