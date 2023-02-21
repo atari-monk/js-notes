@@ -1,5 +1,5 @@
 {
-  "title": "VSCode keys",
+  "title": "Apps Keys",
   "nav": [
     {
       "text": "Source"
@@ -41,7 +41,7 @@
     "precondition": {
       "text": "Preconditions",
       "list": [
-        "",
+        "Windows 11/10",
         ""
       ]
     }
@@ -52,7 +52,7 @@
       "points": [
         {
           "text": [
-            "Keys"
+            "VSCode"
           ],
           "codes": [
             {
@@ -80,27 +80,17 @@
         },
         {
           "text": [
-            ""
+            "Chrome"
           ],
           "codes": [
             {
               "format": [
-                ""
-              ]
-            },
-            {
-              "format": [
-                ""
-              ]
-            },
-            {
-              "format": [
-                ""
+                "{0}"
               ],
               "params": [
                 {
-                  "name": "",
-                  "desc": ""
+                  "name": "F12",
+                  "desc": "dev tools"
                 },
                 {
                   "name": "",

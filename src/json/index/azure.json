@@ -1,0 +1,18 @@
+{
+  "nav": [
+    {
+      "text": "Azure"
+    }
+  ],
+  "sections": [
+    {
+      "text": "Azure",
+      "links": [
+        {
+          "link": "notes.html?page=note/voting-app",
+          "text": "Voting App deploy to azure"
+        }
+      ]
+    }
+  ]
+}
