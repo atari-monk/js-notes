@@ -152,7 +152,7 @@
                   "desc": "Clears all files in local global-packages cache directory"
                 },
                 {
-                  "name": "C:\\atari-monk\\1-lib-nugets",
+                  "name": "C:\\atari-monk\\nugets",
                   "desc": "build path"
                 }
               ]
@@ -166,7 +166,7 @@
           "codes": [
             {
               "format": [
-                "&lt;RestoreSources&gt;$<br>(RestoreSources);C:\\atari-monk\\1-lib-nugets;<br>C:\\atari-monk\\2-app-nugets;https://api.nuget.org/v3/index.json<br>&lt;/RestoreSources&gt;"
+                "&lt;RestoreSources&gt;$<br>(RestoreSources);C:\\atari-monk\\nugets;<br>https://api.nuget.org/v3/index.json<br>&lt;/RestoreSources&gt;"
               ]
             }
           ]
