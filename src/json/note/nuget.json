@@ -32,6 +32,14 @@
         {
           "link": "https://github.com/dasMulli/LocalNupkgExample",
           "text": "Local Nupkg Example"
+        },
+        {
+          "link": "https://learn.microsoft.com/en-us/nuget/nuget-org/individual-accounts#add-a-new-individual-account",
+          "text": "nuget.org free account"
+        },
+        {
+          "link": "https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-locals",
+          "text": "dotnet nuget locals"
         }
       ]
     },
@@ -42,14 +50,14 @@
         "They are build to Build folder.",
         "They are referenced in csproj files.",
         "Local nuget would remove explicit path from refs in csproj.",
-        "Therefore this look into nugets."
+        "Therefore this look into nugets.",
+        "Solution was combined out of many sources, some of witch are noted in Source section."
       ]
     },
     "precondition": {
       "text": "Preconditions",
       "list": [
-        "<a href='https://dotnet.microsoft.com/en-us/download'>.NET SDK</a>",
-        "<a href='https://learn.microsoft.com/en-us/nuget/nuget-org/individual-accounts#add-a-new-individual-account'>nuget.org free account</a>"
+        "VSCode"
       ]
     }
   },
@@ -59,24 +67,16 @@
       "points": [
         {
           "text": [
-            "Create new github repo"
-          ]
-        },
-        {
-          "text": [
-            "Open folder with VSCode"
-          ]
-        },
-        {
-          "text": [
-            "Setup project."
+            "Open repo folder with VSCode",
+            "Setup project for generating nuget."
           ],
           "codes": [
             {
               "format": [
                 "dotnet new sln",
                 "dotnet new classlib -n Connection.Builder",
-                "dotnet sln add ./Connection.Builder/"
+                "dotnet sln add ./Connection.Builder/",
+                "dotnet build"
               ]
             }
           ]
@@ -88,7 +88,12 @@
           "codes": [
             {
               "format": [
-                "&lt;PackageId&gt;{0}&lt;/PackageId&gt;&lt;br&gt;&lt;Version&gt;{1}&lt;/Version&gt;&lt;br&gt;&lt;Authors&gt;{2}&lt;/Authors&gt;&lt;br&gt;&lt;Company&gt;{3}&lt;/Company&gt;&lt;br&gt;&lt;PackageTags&gt;{4}&lt;/PackageTags&gt;&lt;br&gt;&lt;Description&gt;{5}&lt;/Description&gt;"
+                "&lt;PackageId&gt;{0}&lt;/PackageId&gt;",
+                "&lt;Version&gt;{1}&lt;/Version&gt;",
+                "&lt;Authors&gt;{2}&lt;/Authors&gt;",
+                "&lt;Company&gt;{3}&lt;/Company&gt;",
+                "&lt;PackageTags&gt;{4}&lt;/PackageTags&gt;",
+                "&lt;Description&gt;{5}&lt;/Description&gt;"
               ],
               "params": [
                 {
@@ -121,42 +126,33 @@
         },
         {
           "text": [
-            "Build"
-          ],
-          "codes": [
-            {
-              "format": [
-                "dotnet build"
-              ]
-            }
-          ]
-        },
-        {
-          "text": [
             "Produce nuget file with dotnet cli."
           ],
           "codes": [
             {
               "format": [
-                "cd C:\\atari-monk\\Code\\connection-builder\\Connection.Builder",
-                "dotnet nuget locals all --clear",
-                "dotnet nuget locals temp -c",
-                "dotnet nuget locals global-packages -c",
-                "dotnet restore"
+                "cd C:\\atari-monk\\Code\\net-my-libs\\Connection.Builder",
+                "{0}",
+                "{1}",
+                "{2}",
+                "dotnet restore",
+                "dotnet pack -c Release -o {3}"
               ],
               "params": [
                 {
-                  "desc": "todo: this is prolly not needed (invesigate source)"
-                }
-              ]
-            },
-            {
-              "format": [
-                "dotnet pack -c Release -o {0}"
-              ],
-              "params": [
+                  "name": "dotnet nuget locals all --clear",
+                  "desc": "Clears all files from all local cache directories (http-cache directory, global-packages cache directory, and temporary cache directory)"
+                },
                 {
-                  "name": "C:\\atari-monk\\Build\\nugets",
+                  "name": "dotnet nuget locals temp -c",
+                  "desc": "Clears all files in local temporary cache directory"
+                },
+                {
+                  "name": "dotnet nuget locals global-packages -c",
+                  "desc": "Clears all files in local global-packages cache directory"
+                },
+                {
+                  "name": "C:\\atari-monk\\1-lib-nugets",
                   "desc": "build path"
                 }
               ]
@@ -170,7 +166,7 @@
           "codes": [
             {
               "format": [
-                "&lt;RestoreSources&gt;$(RestoreSources);C:\\atari-monk\\Build\\nugets;https://api.nuget.org/v3/index.json&lt;/RestoreSources&gt;"
+                "&lt;RestoreSources&gt;$<br>(RestoreSources);C:\\atari-monk\\1-lib-nugets;<br>C:\\atari-monk\\2-app-nugets;https://api.nuget.org/v3/index.json<br>&lt;/RestoreSources&gt;"
               ]
             }
           ]
@@ -182,23 +178,15 @@
           "codes": [
             {
               "format": [
-                "cd C:\\atari-monk\\Code\\repo\\proj"
-              ]
-            },
-            {
-              "format": [
-                "dotnet add package {0}"
+                "cd C:\\atari-monk\\Code\\repo\\proj",
+                "dotnet add package {0}",
+                "dotnet restore"
               ],
               "params": [
                 {
                   "name": "Connection.Builder",
                   "desc": "PackageId"
                 }
-              ]
-            },
-            {
-              "format": [
-                "dotnet restore"
               ]
             }
           ]
