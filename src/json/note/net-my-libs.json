@@ -1,0 +1,97 @@
+{
+  "title": "net-my-libs",
+  "nav": [
+    {
+      "text": "Source"
+    },
+    {
+      "text": "Description"
+    },
+    {
+      "text": "Preconditions"
+    },
+    {
+      "text": "Notes"
+    },
+    {
+      "text": "Summary"
+    }
+  ],
+  "sections": {
+    "source": {
+      "text": "Source",
+      "links": [
+        {
+          "link": "https://github.com/atari-monk/net-my-libs",
+          "text": "Repo"
+        }
+      ]
+    },
+    "desc": {
+      "text": "Description",
+      "desc": [
+        "My Repo with my .net libraries."
+      ]
+    },
+    "precondition": {
+      "text": "Preconditions",
+      "list": [
+        "VSCode"
+      ]
+    }
+  },
+  "notes": [
+    {
+      "text": "Notes",
+      "points": [
+        {
+          "text": [
+            "History"
+          ],
+          "codes": [
+            {
+              "format": [
+                "My github was created july 2021.",
+                "At the time, among other things, i was interested in cli apps and CommandDotNet cli lib.",
+                "Couple of cli apps where produced.",
+                "Code that i would reuse in them or one i wanted to learn in separete assembly,",
+                "was ending up in it's separete repos, solutions and projects.",
+                "These libs were build by generated scripts and",
+                "referenced in projs with absolute paths to dlls.",
+                "Beggining 2023 i consolidated these libs in one repo and solution.",
+                "Net6.0 was upgraded to Net7.0",
+                "Replacing paths, Loacal Nugets were generated."
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Config.Wrapper"
+          ],
+          "codes": [
+            {
+              "format": [
+                "History",
+                "I think this was added becouse cli app didnt had json config build in.",
+                "Beggining 2022 net. web apps had json config files set in di container by default.",
+                "Cli did not. So i readed hastly some msdocs about that.",
+                "Once json config was set and used in test app",
+                "i begun to use this lib in my cli apps",
+                "At 02.2023 my apps were still using it.<br>"
+              ]
+            },
+            {
+              "format": [
+                "Structure"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": [
+    ""
+  ]
+}

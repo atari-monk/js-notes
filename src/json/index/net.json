@@ -2,6 +2,9 @@
   "nav": [
     {
       "text": ".Net"
+    },
+    {
+      "text": "My Projects"
     }
   ],
   "sections": [
@@ -31,6 +34,15 @@
         {
           "link": "notes.html?page=note/cs-quiz",
           "text": "C# quiz"
+        }
+      ]
+    },
+    {
+      "text": "My Projects",
+      "links": [
+        {
+          "link": "notes.html?page=note/net-my-libs",
+          "text": "net-my-libs"
         }
       ]
     }
