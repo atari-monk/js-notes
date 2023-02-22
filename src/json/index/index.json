@@ -22,6 +22,10 @@
         {
           "link": "index.html?page=index/azure",
           "text": "Azure"
+        },
+        {
+          "link": "notes.html?page=note/files",
+          "text": "VSCode files"
         }
       ]
     },
