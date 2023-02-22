@@ -166,7 +166,7 @@
           "codes": [
             {
               "format": [
-                "&lt;RestoreSources&gt;$<br>(RestoreSources);C:\\atari-monk\\nugets;<br>https://api.nuget.org/v3/index.json<br>&lt;/RestoreSources&gt;"
+                "&lt;RestoreSources&gt;$(RestoreSources);C:\\atari-monk\\nugets;https://api.nuget.org/v3/index.json&lt;/RestoreSources&gt;"
               ]
             }
           ]
