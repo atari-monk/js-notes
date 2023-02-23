@@ -67,7 +67,8 @@
                 "0-26; Intro/Setup",
                 "26-42; Basic Types",
                 "42-1:10; Arrays & Objects",
-                "1:10-x; Functions"
+                "1:10-1:42; Functions",
+                "1:42-x; Type casting/Assertions"
               ]
             }
           ]
@@ -229,6 +230,21 @@
           "codes": [
             {
               "format": [
+                "type aliases",
+                "literal types - type with defined set of values",
+                "functions",
+                "never type"
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Type casting/Assertions"
+          ],
+          "codes": [
+            {
+              "format": [
                 ""
               ]
             },
@@ -258,7 +274,6 @@
     }
   ],
   "summary": [
-    "",
-    ""
+    "In progress"
   ]
 }
