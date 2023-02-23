@@ -1,0 +1,252 @@
+{
+  "title": "HTML & CSS Full Course - Beginner to Pro",
+  "nav": [
+    {
+      "text": "Source"
+    },
+    {
+      "text": "Description"
+    },
+    {
+      "text": "Preconditions"
+    },
+    {
+      "text": "Notes"
+    },
+    {
+      "text": "Summary"
+    }
+  ],
+  "sections": {
+    "source": {
+      "text": "Source",
+      "links": [
+        {
+          "link": "https://youtu.be/G3e-cpL7ofc",
+          "text": "Source Tutorial"
+        },
+        {
+          "link": "https://supersimple.dev/exercises/buttons",
+          "text": "Exersise 1"
+        }
+      ]
+    },
+    "desc": {
+      "text": "Description",
+      "desc": [
+        "HTML & CSS"
+      ]
+    },
+    "precondition": {
+      "text": "Preconditions",
+      "list": [
+        "Chrome",
+        "VSCode"
+      ]
+    }
+  },
+  "notes": [
+    {
+      "text": "Notes",
+      "points": [
+        {
+          "text": [
+            "Timestamps"
+          ],
+          "codes": [
+            {
+              "format": [
+                "0-1; Intro",
+                "1-18; 1. Html Intro",
+                "18-44; 2. Css Intro",
+                "44-x; 3. Hovers, Transitions, Shadows"
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Html Syntax"
+          ],
+          "codes": [
+            {
+              "format": [
+                "Html-HyperText Markup Language",
+                "{0}: a, button, p",
+                "Tags: {1}Content/Text{2}",
+                "{3}: &lt;a href=\"\" target=\"\"",
+                "spaces in html code are ignored",
+                "advised formating:",
+                "&lt;p&gt;",
+                "&nbsp;&nbsp;Content/Text",
+                "&lt;/p&gt;"
+              ],
+              "params": [
+                {
+                  "name": "elements",
+                  "desc": "things displayed on web page"
+                },
+                {
+                  "name": "&lt;element-name&gt;",
+                  "desc": "Opening Tag"
+                },
+                {
+                  "name": "&lt;/element-name&gt;",
+                  "desc": "Closing Tag"
+                },
+                {
+                  "name": "Html attributes",
+                  "desc": "Modifies element behvior"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Paragraph Element"
+          ],
+          "codes": [
+            {
+              "format": [
+                "&lt;p&gt;Content/Text&lt;/p&gt;"
+              ],
+              "params": [
+                {
+                  "name": "",
+                  "desc": ""
+                },
+                {
+                  "name": "",
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Button Element"
+          ],
+          "codes": [
+            {
+              "format": [
+                "&lt;button&gt;Content/Text&lt;/button&gt;"
+              ],
+              "params": [
+                {
+                  "name": "",
+                  "desc": ""
+                },
+                {
+                  "name": "",
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Anchor Element"
+          ],
+          "codes": [
+            {
+              "format": [
+                "&lt;a {0} {1}&gt;Content/Text&lt;/a&gt;"
+              ],
+              "params": [
+                {
+                  "name": "href=\"\"",
+                  "desc": "url"
+                },
+                {
+                  "name": "target=\"_blank\"",
+                  "desc": "empty opens in same page, _blank in new tab"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "CSS Syntax"
+          ],
+          "codes": [
+            {
+              "format": [
+                "{0}",
+                "{1} {",
+                "&nbsp;&nbsp;{2}: {3};",
+                "}",
+                "&lt;/style&gt;",
+                "rgb(255,255,255) - red, green, blue color scale",
+                "&lt;button {4}&gt;",
+                "technique to copy style from reference:",
+                "1. Create element with HTML",
+                "2. Style with CSS one-by-one"
+              ],
+              "params": [
+                {
+                  "name": "&lt;style&gt;",
+                  "desc": "element to write css embeded in html"
+                },
+                {
+                  "name": "button",
+                  "desc": "CSS Selector - which elements we're targeting"
+                },
+                {
+                  "name": "background-color",
+                  "desc": "CSS Property - what we're changing"
+                },
+                {
+                  "name": "red",
+                  "desc": "CSS Value"
+                },
+                {
+                  "name": "class=&quot;&quot;",
+                  "desc": "class attribute - lets you label html elements, .close-button (. in name)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "3. Hovers, Transitions, Shadows"
+          ],
+          "codes": [
+            {
+              "format": [
+                ""
+              ]
+            },
+            {
+              "format": [
+                ""
+              ]
+            },
+            {
+              "format": [
+                ""
+              ],
+              "params": [
+                {
+                  "name": "",
+                  "desc": ""
+                },
+                {
+                  "name": "",
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": [
+    "In progress."
+  ]
+}

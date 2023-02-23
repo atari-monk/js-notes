@@ -34,6 +34,10 @@
         {
           "link": "notes.html?page=note/typescript-lessons",
           "text": "TypeScript Learning"
+        },
+        {
+          "link": "notes.html?page=note/html-css-course",
+          "text": "HTML & CSS Full Course - Beginner to Pro"
         }
       ]
     },
