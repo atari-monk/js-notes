@@ -228,16 +228,22 @@
             },
             {
               "format": [
-                ""
+                ".close-button{0}",
+                "{1}",
+                "{2}"
               ],
               "params": [
                 {
-                  "name": "",
-                  "desc": ""
+                  "name": ":hover",
+                  "desc": "pseudo class - colon after class specifies that style applies to specific state of the element"
                 },
                 {
-                  "name": "",
-                  "desc": ""
+                  "name": "active",
+                  "desc": "state when button is clicked"
+                },
+                {
+                  "name": "opacity",
+                  "desc": "css property that tells how transparent element is (0-1)"
                 }
               ]
             }

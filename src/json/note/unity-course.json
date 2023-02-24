@@ -1,0 +1,155 @@
+{
+  "title": "Learn Unity",
+  "nav": [
+    {
+      "text": "Source"
+    },
+    {
+      "text": "Description"
+    },
+    {
+      "text": "Preconditions"
+    },
+    {
+      "text": "Notes"
+    },
+    {
+      "text": "Summary"
+    }
+  ],
+  "sections": {
+    "source": {
+      "text": "Source",
+      "links": [
+        {
+          "link": "https://youtu.be/AmGSEH7QcDg",
+          "text": "Source Tutorial"
+        },
+        {
+          "link": "https://unity.com/download",
+          "text": "Unity"
+        }
+      ]
+    },
+    "desc": {
+      "text": "Description",
+      "desc": [
+        "Always wanted to create a game.",
+        ""
+      ]
+    },
+    "precondition": {
+      "text": "Preconditions",
+      "list": [
+        "Unity",
+        "Visual Studio Community 2022"
+      ]
+    }
+  },
+  "notes": [
+    {
+      "text": "Notes",
+      "points": [
+        {
+          "text": [
+            "Timestamps"
+          ],
+          "codes": [
+            {
+              "format": [
+                "0-20; Intro",
+                "20-25 Create Project",
+                "25-32 Prepare Layout",
+                "32-x Setup Visual Studio"
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Create Project"
+          ],
+          "codes": [
+            {
+              "format": [
+                "Install Unity Hub",
+                "Instal Unity Editor version 2022.2.1f1 (course version)",
+                "Only editor and Visual Studio Community 2022 for this",
+                "Create new Project",
+                "Select Unity Editor version 2022.2.1f1",
+                "Installed on game ssd drive",
+                "E:\\2022.2.1f1\\Editor\\Unity.exe",
+                "select 3D URP template (universal render pipeline), download template",
+                "Set Project Name to KitchenChaos",
+                "Project folder: E:\\atari-monk\\unity-course",
+                "Click New Project, editor opens",
+                "remove readme assets about URP",
+                "Edit->Project Settings->Graphics Tab check ig URP HighFidelity asset should be assign",
+                "URP Global Settings should be set to UniversalRenderPipelineGlobalSettings",
+                "On Quality tab HighFidelity should be seleted, trash/delete preforment and balanced",
+                "Go to main assets tab and delete preforment and balanced assets (4)"
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Prepare Layout"
+          ],
+          "codes": [
+            {
+              "format": [
+                "Inspector on the right",
+                "put Hierarchy down on left side",
+                "next Project and Console",
+                "Scene and Game view in the center",
+                "go to Project, 3 dots menu, select one column layout",
+                "go to Console, 3 dots menu, select Log Entry-> one line, Clear->Clear on play, untoogle collapse, toogle pause on error",
+                "on Game view, Free Aspect -> Full HD, turn on VSync (limit fps), Play Unfocused, scale should be pushed max to the left",
+                "on Scene view, use Pivot (not center), Global (rotation), grid on, snaping off",
+                "on the right, draw mode on Shaded, 2D off, ligh on, audio off, special effects on (refresh off)",
+                "hidden objs on, camera defaults, gizmos defaults",
+                "go to layouts (top right), save as KitchenChaos"
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Setup Visual Studio"
+          ],
+          "codes": [
+            {
+              "format": [
+                ""
+              ]
+            },
+            {
+              "format": [
+                ""
+              ]
+            },
+            {
+              "format": [
+                ""
+              ],
+              "params": [
+                {
+                  "name": "",
+                  "desc": ""
+                },
+                {
+                  "name": "",
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": [
+    "In progress."
+  ]
+}

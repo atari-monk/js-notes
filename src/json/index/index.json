@@ -26,6 +26,10 @@
         {
           "link": "notes.html?page=note/files",
           "text": "VSCode files"
+        },
+        {
+          "link": "notes.html?page=note/unity-course",
+          "text": "Learn Unity"
         }
       ]
     },
