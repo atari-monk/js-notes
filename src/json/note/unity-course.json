@@ -57,17 +57,18 @@
           "codes": [
             {
               "format": [
-                "0-20; Intro",
-                "20-25 Create Project",
-                "25-32 Prepare Layout",
-                "32-x Setup Visual Studio"
+                "0-20; 1. Intro",
+                "20-25; 2. Create Project",
+                "25-32; 3. Prepare Layout",
+                "32-35.5; 4. Setup Visual Studio",
+                "35.5-x; 5. Naming Rules"
               ]
             }
           ]
         },
         {
           "text": [
-            "Create Project"
+            "2. Create Project"
           ],
           "codes": [
             {
@@ -94,7 +95,7 @@
         },
         {
           "text": [
-            "Prepare Layout"
+            "3. Prepare Layout"
           ],
           "codes": [
             {
@@ -116,7 +117,26 @@
         },
         {
           "text": [
-            "Setup Visual Studio"
+            "4. Setup Visual Studio"
+          ],
+          "codes": [
+            {
+              "format": [
+                "Open proj in Unity Editor, Window->Package Manager, Packeges->Unity Registry",
+                "Find editor of liking, Visual Studio Editor, install (upd btn)",
+                "Edit->Preferences, External Tools, External Script Editor, select VS, untick checkboxes (this proj doesnt need it)",
+                "Go to Assets->Open C# Project, VS opens up",
+                "In VS, Extensions->Manage Extensions, Viasfora, install",
+                "Go to Tools->Options, Viasfora, Enable Dev Margin false, Rainbow Braces is one of the features of this extnsion.",
+                "Go to Unity Editor, Project, +, add c# script, name it Testing, wait to compile, click to open in VS",
+                "Go to Tools->Options, C#->Code Style->Formating, he unchecked to make braces not start in new lines"
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "5. Naming Rules"
           ],
           "codes": [
             {
