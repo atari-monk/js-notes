@@ -59,13 +59,15 @@
                 "0-1; Intro",
                 "1-18; 1. Html Intro",
                 "18-44; 2. Css Intro",
-                "44-x; 3. Hovers, Transitions, Shadows"
+                "44-x; 3. Hovers, Transitions, Shadows",
+                "1:03-x 4. Chrome DevTools & CSS Box Model"
               ]
             }
           ]
         },
         {
           "text": [
+            "1. Html Intro",
             "Html Syntax"
           ],
           "codes": [
@@ -170,6 +172,7 @@
         },
         {
           "text": [
+            "2. Css Intro",
             "CSS Syntax"
           ],
           "codes": [
@@ -218,19 +221,15 @@
           "codes": [
             {
               "format": [
-                ""
-              ]
-            },
-            {
-              "format": [
-                ""
-              ]
-            },
-            {
-              "format": [
                 ".close-button{0}",
                 "{1}",
-                "{2}"
+                "{2}",
+                "{3}",
+                "transition: background-color 1s, color 1s;",
+                "always put transitions in base class css style, not on pseudo class becouse it works only in particular state",
+                "how to create shadows:",
+                "box-shadow: {4} {5} {6} {7};",
+                "{8}"
               ],
               "params": [
                 {
@@ -244,6 +243,62 @@
                 {
                   "name": "opacity",
                   "desc": "css property that tells how transparent element is (0-1)"
+                },
+                {
+                  "name": "transition: opacity 1s",
+                  "desc": "CSS property for Transitions beetween styles"
+                },
+                {
+                  "name": "10px",
+                  "desc": "horizontal possition of a shadow"
+                },
+                {
+                  "name": "15px",
+                  "desc": "vertical possition of a shadow"
+                },
+                {
+                  "name": "20px",
+                  "desc": "shadow blur"
+                },
+                {
+                  "name": "black",
+                  "desc": "shadow color"
+                },
+                {
+                  "name": "rgba(0, 0, 0, 0.15)",
+                  "desc": "color rgb with opacity a"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "4. Chrome DevTools & CSS Box Model"
+          ],
+          "codes": [
+            {
+              "format": [
+                ""
+              ]
+            },
+            {
+              "format": [
+                ""
+              ]
+            },
+            {
+              "format": [
+                ""
+              ],
+              "params": [
+                {
+                  "name": "",
+                  "desc": ""
+                },
+                {
+                  "name": "",
+                  "desc": ""
                 }
               ]
             }
