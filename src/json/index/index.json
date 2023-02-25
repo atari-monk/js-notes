@@ -5,6 +5,9 @@
     },
     {
       "text": "Software"
+    },
+    {
+      "text": "Diy"
     }
   ],
   "sections": [
@@ -43,6 +46,15 @@
         {
           "link": "notes.html?page=note/apps-keys",
           "text": "Apps Keys"
+        }
+      ]
+    },
+    {
+      "text": "Diy",
+      "links": [
+        {
+          "link": "notes.html?page=note/stool",
+          "text": "Stool"
         }
       ]
     }

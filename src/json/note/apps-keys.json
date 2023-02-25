@@ -22,8 +22,8 @@
       "text": "Source",
       "links": [
         {
-          "link": "",
-          "text": "Source Tutorial"
+          "link": "https://docs.blender.org/manual/en/latest/index.html",
+          "text": "Blender Manual"
         },
         {
           "link": "",
@@ -34,7 +34,7 @@
     "desc": {
       "text": "Description",
       "desc": [
-        "",
+        "Apps key mapping",
         ""
       ]
     },
@@ -42,7 +42,7 @@
       "text": "Preconditions",
       "list": [
         "Windows 11/10",
-        ""
+        "Apps"
       ]
     }
   },
@@ -91,10 +91,30 @@
                 {
                   "name": "F12",
                   "desc": "dev tools"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Blender ver 3.4"
+          ],
+          "codes": [
+            {
+              "format": [
+                "{0}",
+                "{1}",
+                "edge length - edit mode/Viewport Overlays(main view right top menu)/Mesurment/Edge Length"
+              ],
+              "params": [
+                {
+                  "name": "ctrl-a",
+                  "desc": "apply scale, rotation, possition"
                 },
                 {
-                  "name": "",
-                  "desc": ""
+                  "name": "tab",
+                  "desc": "togle edit/object mode"
                 }
               ]
             }
@@ -104,7 +124,6 @@
     }
   ],
   "summary": [
-    "",
-    ""
+    "Know your controls."
   ]
 }
