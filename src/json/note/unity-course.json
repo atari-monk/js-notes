@@ -61,7 +61,10 @@
                 "20-25; 2. Create Project",
                 "25-32; 3. Prepare Layout",
                 "32-35.5; 4. Setup Visual Studio",
-                "35.5-x; 5. Naming Rules"
+                "35.5-39.5; 5. Naming Rules",
+                "39.5-41; 6. Importing Assets",
+                "41-56; 7. Post Processing",
+                "56-1:15; 8. Character Controller"
               ]
             }
           ]
@@ -137,6 +140,108 @@
         {
           "text": [
             "5. Naming Rules"
+          ],
+          "codes": [
+            {
+              "format": [
+                "{0}",
+                "{1}",
+                "{2}",
+                "{3}",
+                "His rules:",
+                "Functions Names - PascalCase",
+                "Function params - camelCase",
+                "Fields - camelCase",
+                "Properties - PascalCase",
+                "Constants = UpperCase SnakeCase",
+                "Events - PascalCase",
+                "Proper naming with no abbreviations"
+              ],
+              "params": [
+                {
+                  "name": "PascalCase",
+                  "desc": "Starts with capital and every word is capitalized"
+                },
+                {
+                  "name": "camelCase",
+                  "desc": "Starts with lowercase and every word is capitalized (camel hump)"
+                },
+                {
+                  "name": "snake_case",
+                  "desc": "underscore beetween words"
+                },
+                {
+                  "name": "github-repo-case",
+                  "desc": "- beetween words"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "6. Importing Assets"
+          ],
+          "codes": [
+            {
+              "format": [
+                "account on codeMonkey page, downloaded assets",
+                "drag&drop assets package on Project window, select All, import",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "7. Post Processing"
+          ],
+          "codes": [
+            {
+              "format": [
+                "normally added later, this is for yt",
+                "rename Scene->SampleScene to GameScene",
+                "click GameScene, click GlobalVolume, select SampleSceneProfile, delete it ",
+                "click new to create ne Volume Profile",
+                "on Hierarchy, add, 3d object, plane, name it Floor",
+                "select plane, go to transform, position on 0, scale 5 5 5",
+                "enable constrain proportions",
+                "materials, circle selector, choose floor from assets",
+                "Project, Assets->PrefabsVisuals, select PlayerVisual, drag&drop on main screen, on plain",
+                "also for ClearCounter, CuttingCounter, tomato, cabbage",
+                "scene control: mouse 3 (wheel) - pan camera, rotate cam - right mouse button, rotate around point - left alt, left mouse btn, zoom - left alt, right mouse btn",
+                "rotate around obj - select obj, f, left alt, left mouse btn",
+                "hold right mouse btn, use WSAD to move, shift to move faster, mose wheel to mod speed",
+                "possition camera:",
+                "position cam in scene, select main cam in Herarchy, ctrl+shift+f or menu->GameObject->Align With View, switch to Game view",
+                "select Global Volume, add override -> Post Processing -> Tonemapping, check Mode, Neutral",
+                "if no diffrence, check if Main Cam->Rendering->PostProcessing is enabled",
+                "also enabled in URP-HighFidelity-Renderer",
+                "Global Volume -> add override -> Post Processing -> Color Adjustments, Saturation on 20, contrast on 20",
+                "add stove counter asset",
+                "find stoveOnVisual in it, enable it visible",
+                "Global Volume -> add override -> Post Processing -> Bloom",
+                "enable treshold and intensity, set 0.95 and 1",
+                "stove should glow, for this URP HDR must be on",
+                "URP renderer must have Post Process Data atached (toogle to reset if not)",
+                "Global Volume -> add override -> Post Processing -> Vignette",
+                "Intensity .25, Smoothness .4",
+                "select URP, Anti Aliasing (MSAA) 8x (see diffrance in game view), on camera select no anti aliasing",
+                "URP renderer, add Screen Space Ambient Occlusion, adds shadows where object intersects, it looks better",
+                "select cam, position it, x 0 y 21.5 z -21.3, rot x 46 y 0 z 0",
+                "go to URP renderer, set ambient oclusion",
+                "intensity 4, radius .3, direct lighting strength 1",
+                "window->Rendering->Lighting, anchor it next to inspector",
+                "leave defaults, scene->assets none, environment default",
+                "in clobal volume, u can clone profile and make other post processing look with diffrent settings",
+                "delete visuals exept floor"
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "8. Character Controller"
           ],
           "codes": [
             {
