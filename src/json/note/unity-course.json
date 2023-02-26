@@ -64,14 +64,15 @@
                 "35.5-39.5; 5. Naming Rules",
                 "39.5-41; 6. Importing Assets",
                 "41-56; 7. Post Processing",
-                "56-1:15; 8. Character Controller"
+                "56-1:15; 8. Character Controller",
+                "1:15-1:23 Character Visual, Rotation"
               ]
             }
           ]
         },
         {
           "text": [
-            "2. Create Project"
+            "Create Project"
           ],
           "codes": [
             {
@@ -98,7 +99,7 @@
         },
         {
           "text": [
-            "3. Prepare Layout"
+            "Prepare Layout"
           ],
           "codes": [
             {
@@ -120,7 +121,7 @@
         },
         {
           "text": [
-            "4. Setup Visual Studio"
+            "Setup Visual Studio"
           ],
           "codes": [
             {
@@ -139,7 +140,7 @@
         },
         {
           "text": [
-            "5. Naming Rules"
+            "Naming Rules"
           ],
           "codes": [
             {
@@ -180,7 +181,7 @@
         },
         {
           "text": [
-            "6. Importing Assets"
+            "Importing Assets"
           ],
           "codes": [
             {
@@ -194,7 +195,7 @@
         },
         {
           "text": [
-            "7. Post Processing"
+            "Post Processing"
           ],
           "codes": [
             {
@@ -241,19 +242,52 @@
         },
         {
           "text": [
-            "8. Character Controller"
+            "Character Controller"
           ],
           "codes": [
             {
               "format": [
-                ""
+                "In Hierarchy, create empty game object, name it Player",
+                "put it on 0,0,0; inside of it create a capsule visual;",
+                "scale it to .7,1,.7; put it up by one unit",
+                "rule: separete logic from visual in your game objects",
+                "create folder Scripts in Assets; create c# script",
+                "call it Player, wait for code to compile",
+                "select player logic object and atach the script, open script",
+                "there are two unity input systems legacy and new one",
+                "older is simpler, witch makes it usefull for prototyping",
+                "newer is more capeable but more complex",
+                "btw VS must have Unity packages installed for accesing framework",
+                "write your code, to test, switch to game, press play, observe console for debug output",
+                "dont forget to save code file or switch auto save",
+                "Framework code assets:",
+                "namespace UnityEngine",
+                "MonoBehaviour",
+                "private void Update() - once per frame",
+                "Vector2",
+                "Input.GetKey(KeyCode.W)",
+                "inputVector (+-1,+-1), but also normalize it, becouse of diagonal",
+                "Debug.Log(inputVector);",
+                "inputVector = inputVector.normalized;",
+                "var moveDir = new Vector3(inputVector.x, 0f, inputVector.y);",
+                "{0} private float moveSpeed = 7f;",
+                "transform.position += moveDir * moveSpeed * Time.deltaTime;",
+                "Run game, check FPS on Stats view"
+              ],
+              "params": [
+                {
+                  "name": "[SerializeField]",
+                  "desc": "this makes field editable in ui editor"
+                }
               ]
-            },
-            {
-              "format": [
-                ""
-              ]
-            },
+            }
+          ]
+        },
+        {
+          "text": [
+            "Character Visual, Rotation"
+          ],
+          "codes": [
             {
               "format": [
                 ""
