@@ -28,6 +28,10 @@
         {
           "link": "https://supersimple.dev/exercises/buttons",
           "text": "Exersise 1"
+        },
+        {
+          "link": "https://www.rapidtables.com/convert/color/hex-to-rgb.html",
+          "text": "Hex to RGB Color Converter"
         }
       ]
     },
@@ -60,14 +64,15 @@
                 "1-18; 1. Html Intro",
                 "18-44; 2. Css Intro",
                 "44-x; 3. Hovers, Transitions, Shadows",
-                "1:03-x 4. Chrome DevTools & CSS Box Model"
+                "1:03-1:17 4. Chrome DevTools & CSS Box Model",
+                "1:17-1:52 5. Text Styles"
               ]
             }
           ]
         },
         {
           "text": [
-            "1. Html Intro",
+            "Html Intro",
             "Html Syntax"
           ],
           "codes": [
@@ -172,7 +177,7 @@
         },
         {
           "text": [
-            "2. Css Intro",
+            "Css Intro",
             "CSS Syntax"
           ],
           "codes": [
@@ -216,7 +221,7 @@
         },
         {
           "text": [
-            "3. Hovers, Transitions, Shadows"
+            "Hovers, Transitions, Shadows"
           ],
           "codes": [
             {
@@ -274,7 +279,52 @@
         },
         {
           "text": [
-            "4. Chrome DevTools & CSS Box Model"
+            "Chrome DevTools & CSS Box Model"
+          ],
+          "codes": [
+            {
+              "format": [
+                "right click empty area, select inspect to open chrome dev tools",
+                "in tab elements, select element, in styles tab, all styles for this element",
+                "this tool works for every web site",
+                "selection icon - selects elements on page and highlights coresponding html",
+                "hex color scale:",
+                "#{0}{1}{2}",
+                "hex to rgb calculators",
+                "Computed tab shows final styles aplied to element",
+                "You can get final rgb colors and sizes there",
+                "you copy colors from source to target with chrome tools",
+                "CSS Box Model:",
+                "margin - adds space outside element",
+                "setting fixed height and width prevents element to auto size to it's content",
+                "padding - spacing inside the element",
+                "chrome dev tools Computed tab has box model for selected element",
+                "margin, border, padding sizes (in px)",
+                "buttons have default padding of 6 on sides and 1 on top and bottom",
+                "using padding is better alternative to hight and width",
+                "browsers align by text, by default",
+                "to align elements use vertical-align prop"
+              ],
+              "params": [
+                {
+                  "name": "1d",
+                  "desc": "red"
+                },
+                {
+                  "name": "9b",
+                  "desc": "green"
+                },
+                {
+                  "name": "f0",
+                  "desc": "blue"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Text Styles"
           ],
           "codes": [
             {
