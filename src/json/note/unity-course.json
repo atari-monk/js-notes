@@ -65,7 +65,8 @@
                 "39.5-41; 6. Importing Assets",
                 "41-56; 7. Post Processing",
                 "56-1:15; 8. Character Controller",
-                "1:15-1:23 Character Visual, Rotation"
+                "1:15-1:23 Character Visual, Rotation",
+                "1:23-1:43 Animations"
               ]
             }
           ]
@@ -288,6 +289,49 @@
             "Character Visual, Rotation"
           ],
           "codes": [
+            {
+              "format": [
+                "1:15-1:23",
+                "drag Player Visual to Player object",
+                "position 0,0,0",
+                "Materials:",
+                "has a shader and bunch of properties",
+                "shader is a code that runs on a graphics card",
+                "calculating how object is rendered",
+                "there is a lot of default ones",
+                "in URP use URP shaders, by default Lit",
+                "Shader Graph - Visual tool for generating shaders without coding them",
+                "Lit shader - Base Map has color field",
+                "you can drag&drop material from assets on to the scene, or Mesh renderer Material field",
+                "crate materials and apply them on shapes",
+                "Rotate Visual:",
+                "transform.rotation - uses quaterions, not intuitive",
+                "transform.eulerAngles - uses 0-360 degrees",
+                "transform.LookAt",
+                "transform.forward = moveDir (method used)",
+                "Smooth with Lerp",
+                "function for interpolating",
+                "var rotateSpeed = 10f;",
+                "transform.forward = Vector3.Slerp(transform.forward, moveDir, Time.deltaTime * rotateSpeed)"
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Animations"
+          ],
+          "codes": [
+            {
+              "format": [
+                ""
+              ]
+            },
+            {
+              "format": [
+                ""
+              ]
+            },
             {
               "format": [
                 ""

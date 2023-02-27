@@ -35,7 +35,8 @@
       "text": "Description",
       "desc": [
         "Apps key mapping",
-        ""
+        "There should be app there that mapps all keys to one set",
+        "so that you can use this one mapping in all apps becouse of the middleware translating it"
       ]
     },
     "precondition": {
@@ -59,7 +60,8 @@
               "format": [
                 "{0}",
                 "{1}",
-                "{2}"
+                "{2}",
+                "{3}"
               ],
               "params": [
                 {
@@ -73,6 +75,10 @@
                 {
                   "name": "Win + .",
                   "desc": "emojis dialog"
+                },
+                {
+                  "name": "ctrl + shift + k",
+                  "desc": "delete line"
                 }
               ]
             }
@@ -115,6 +121,28 @@
                 {
                   "name": "tab",
                   "desc": "togle edit/object mode"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Visual Studio 2022"
+          ],
+          "codes": [
+            {
+              "format": [
+                "{0}"
+              ],
+              "params": [
+                {
+                  "name": "ctrl + shift + l",
+                  "desc": "delete line"
+                },
+                {
+                  "name": "",
+                  "desc": ""
                 }
               ]
             }
