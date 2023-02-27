@@ -34,6 +34,10 @@
         {
           "link": "notes.html?page=note/cs-quiz",
           "text": "C# quiz"
+        },
+        {
+          "link": "notes.html?page=note/dotnet-cli",
+          "text": "Dotnet CLI"
         }
       ]
     },

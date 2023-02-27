@@ -67,7 +67,7 @@
         },
         {
           "text": [
-            "Config.Wrapper"
+            "Config.Wrapper lib proj"
           ],
           "codes": [
             {
@@ -83,7 +83,24 @@
             },
             {
               "format": [
-                "Structure"
+                "Config.Wrapper.Tests proj",
+                "ConfigFileTests - abstract class",
+                "constants with paths, methods for test api of config",
+                "integration test",
+                "checks file ok, no file, bad file",
+                "ConfigBuilderTests - xunit test class",
+                "tests required dependencies, ArgumentNullException on nulls",
+                "tests FileNotFoundException",
+                "tests ok scenario when ok file is there",
+                "ConfigReaderTests - xunit test class",
+                "tests required dependencies, ArgumentNullException on nulls",
+                "test when json config has bad format, not machting model class (InvalidOperationException)",
+                "test if ok file is readed as expected with correct values ending in memory"
+              ]
+            },
+            {
+              "format": [
+                "todo: notes on lib and test app"
               ]
             }
           ]
@@ -92,6 +109,6 @@
     }
   ],
   "summary": [
-    ""
+    "In progres."
   ]
 }
