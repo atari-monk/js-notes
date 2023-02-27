@@ -64,11 +64,12 @@
           "codes": [
             {
               "format": [
-                "0-26; Intro/Setup",
-                "26-42; Basic Types",
-                "42-1:10; Arrays & Objects",
-                "1:10-1:42; Functions",
-                "1:42-x; Type casting/Assertions"
+                "0-26; 1. Intro/Setup",
+                "26-42; 2. Basic Types",
+                "42-1:10; 3. Arrays & Objects",
+                "1:10-1:42; 4. Functions",
+                "1:42-2:08; 5. Type casting/Assertions",
+                "2:08-2:38; 6. Classes"
               ]
             }
           ]
@@ -245,7 +246,32 @@
           "codes": [
             {
               "format": [
-                "providing type if you have more info about it than ts, for example when it's objecs from dom"
+                "providing type if you have more info about it than ts, for example when it's objecs from dom",
+                "let b = a as someType, cast to less or more specific type",
+                "practical use in narrowing",
+                "carefull as this can introduce runtime bugs if used with wrong types or just not work as correct type"
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Classes"
+          ],
+          "codes": [
+            {
+              "format": [
+                ""
+              ]
+            },
+            {
+              "format": [
+                ""
+              ]
+            },
+            {
+              "format": [
+                ""
               ],
               "params": [
                 {
