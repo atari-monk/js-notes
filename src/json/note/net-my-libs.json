@@ -100,7 +100,36 @@
             },
             {
               "format": [
-                "todo: notes on lib and test app"
+                "Config.Wrapper - library",
+                "setup and use of .net json config system in cli app",
+                "ConfigBuilder class",
+                "configures config sys based on msdocs",
+                "sets base dir, sets two json files, one optional",
+                "sets environmentalVariables",
+                "(nice chaining of config methods)",
+                "ConfigReader class",
+                "reads json object to .net class, two methods for two ways of doing that (possible null return and not null with default obj)",
+                "ConfigTool static class",
+                "static class tool wrapper for .net json config",
+                "DirectorySys class",
+                "wrapper to make file sys testable",
+                "ConfigSuite class",
+                "this is a set of modules witch only has one",
+                "todo: investigate why, can't change used in apps",
+                "AppConfigSet class",
+                "Unity container module registering this lib",
+                "there is one instance of config per app, kind of setup",
+                "there is also class for MDI container",
+                "Unity is now deprecated"
+              ]
+            },
+            {
+              "format": [
+                "Config.Wrapper.CLI.TestApp - cli test app",
+                "using lib in test app for example",
+                "tests json with string, int, bool",
+                "TestSettings - model class",
+                "builds config with clasic new keyword and tests redead values"
               ]
             }
           ]
