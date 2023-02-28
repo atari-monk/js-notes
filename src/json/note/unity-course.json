@@ -66,7 +66,8 @@
                 "41-56; 7. Post Processing",
                 "56-1:15; 8. Character Controller",
                 "1:15-1:23 Character Visual, Rotation",
-                "1:23-1:43 Animations"
+                "1:23-1:43 Animations",
+                "1:43-1:48 Cinemachine"
               ]
             }
           ]
@@ -291,7 +292,6 @@
           "codes": [
             {
               "format": [
-                "1:15-1:23",
                 "drag Player Visual to Player object",
                 "position 0,0,0",
                 "Materials:",
@@ -324,14 +324,68 @@
           "codes": [
             {
               "format": [
-                ""
+                "Go to PlayerVisual, add component Animator.",
+                "Add Controller, name it MyPlayerAnimator.",
+                "Drag&Drop it to Animator.",
+                "Click controller to open Animator window.",
+                "Animator is a State Machine.",
+                "It defines states and transitions between them.",
+                "By default there are Any State, Entry, Exit.",
+                "Open Window->Animaion->Animation.",
+                "Dock it beside Console.",
+                "Click Create btn and name animation file - Idle.",
+                "Select PlayerVisual, go to Animation, start recording.",
+                "Move time to 0, select head, move it up a little.",
+                "Red color in fields indocates recorded keyframe.",
+                "Move to frame 30, witch is half a second.",
+                "Samples is set to 60 frames per second.",
+                "Move head a little more higher.",
+                "Select keyframe on 0, ctrl+c, go to 60 (1s), paste keyframe.",
+                "Record keyframe for the body, on 0, not changing possition.",
+                "It's done to reset position when entering animation.",
+                "Stop recording.",
+                "Go to Idle and check if Loop Time is on (default).",
+                "Go to Game, hit play, test animation.",
+                "Duplicate Idle animation (ctrl + d).",
+                "Rename it to Walk.",
+                "Go to Project, drag&drop Walk to Animator view.",
+                "Go to PlayerVisual Animation view, select Walk.",
+                "Repeat steps made for head, do it for the body.",
+                "Select middle body keyframe, offset it to the left.",
+                "Select all keyframes, adjust time scale.",
+                "It makes animation slower or faster.",
+                "In Animator view, select Idle menu, add transition to Walk.",
+                "Select transition, Has Exit Time should be on.",
+                "Select Parameters tab, add bool parameter, name it IsWalking.",
+                "Turn off Has Exit Time, add condition.",
+                "Do it for Walk to Idle direction for IsWalking on false.",
+                "Test the animations.",
+                "Dock Animator view next to Animation and Console.",
+                "Play Game, select PlayerVisual, toogle IsWalking to test animation transitions.",
+                "Create new C# script, name it PlayerAnimator.",
+                "Atach it to PlayerVisual.",
+                "In PlayerAnimator script.",
+                "Get Animator component referance in Awake method.",
+                "Add Player referance by using SerializeField.",
+                "In editor drag&drop player on this ref field.",
+                "Add IsWalking metohd to player script.",
+                "Set IsWalking in animator with player method.",
+                "Use animator SetBool.",
+                "Provide string name of IsWalking using constant.",
+                "Do it in Update method so it's updated once per frame.",
+                "Test it.",
+                "Select PlayerVisual, remove test/learn animator, restore one from assets.",
+                "Remove Idle, Wait, and MyPlayerAnimator controller.",
+                "Test animations."
               ]
-            },
-            {
-              "format": [
-                ""
-              ]
-            },
+            }
+          ]
+        },
+        {
+          "text": [
+            "Cinemachine"
+          ],
+          "codes": [
             {
               "format": [
                 ""
