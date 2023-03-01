@@ -67,6 +67,10 @@
         {
           "link": "notes.html?page=note/todo",
           "text": "ToDo"
+        },
+        {
+          "link": "notes.html?page=note/recipes",
+          "text": "Recipes"
         }
       ]
     }
