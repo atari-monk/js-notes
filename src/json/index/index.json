@@ -71,6 +71,10 @@
         {
           "link": "notes.html?page=note/recipes",
           "text": "Recipes"
+        },
+        {
+          "link": "notes.html?page=note/ug-give-up",
+          "text": "UG Give Up Talk"
         }
       ]
     }
