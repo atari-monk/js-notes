@@ -151,6 +151,44 @@
               ]
             }
           ]
+        },
+        {
+          "text": [
+            "DIHelper lib proj"
+          ],
+          "codes": [
+            {
+              "format": [
+                "History",
+                "This was made to support Dependency injection container use.<br>",
+                "Structure",
+                "Bootstraper",
+                "It creates app and runs it with optional args params.",
+                "It uses DependencySuite to register apps components.",
+                "In CreateApp method, it resolves app from di container, and runs apps Setup method.<br>",
+                "MultiBootstraper",
+                "This bootstraper has a dictionary of suites.",
+                "Suits have keys with two flags.",
+                "Suit can be ComponentSuite or AppSuite.",
+                "Each type is setup separetly.<br>",
+                "DependencySet abstract",
+                "It's a concept of a module.",
+                "It holds container and registers components of a module.<br>",
+                "DependencySuite",
+                "It's a concept of a container for a list of modules.",
+                "It registers modules.",
+                "Registerd modules, register their dependencies.",
+                "It also has method for resolving type.<br>",
+                "Program",
+                "These interfaces define cli app entry and setup methods.<br>",
+                "MicrosoftDI and Unity",
+                "These folders contain classes implementing module (DependencySet) and module set (DependencySuite),",
+                "for Unity Container and MicrosoftDI Container.",
+                "DependencySuite has template method, categorizing modules and their order of registering.",
+                "Unfortunatly, Unity Container version 5.11.7 was deprecated by author."
+              ]
+            }
+          ]
         }
       ]
     }
