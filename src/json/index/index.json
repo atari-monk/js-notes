@@ -8,6 +8,9 @@
     },
     {
       "text": "Diy"
+    },
+    {
+      "text": "Other"
     }
   ],
   "sections": [
@@ -55,6 +58,15 @@
         {
           "link": "notes.html?page=note/stool",
           "text": "Stool"
+        }
+      ]
+    },
+    {
+      "text": "Other",
+      "links": [
+        {
+          "link": "notes.html?page=note/todo",
+          "text": "ToDo"
         }
       ]
     }
