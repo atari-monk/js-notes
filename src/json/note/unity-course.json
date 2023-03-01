@@ -65,9 +65,11 @@
                 "39.5-41; 6. Importing Assets",
                 "41-56; 7. Post Processing",
                 "56-1:15; 8. Character Controller",
-                "1:15-1:23 Character Visual, Rotation",
-                "1:23-1:43 Animations",
-                "1:43-1:48 Cinemachine"
+                "1:15-1:23 9. Character Visual, Rotation",
+                "1:23-1:43 10. Animations",
+                "1:43-1:49 11. Cinemachine",
+                "1:49-2:04 12. Input System Refactor",
+                "2:04-2:17 13. Collision Detection"
               ]
             }
           ]
@@ -384,6 +386,59 @@
         {
           "text": [
             "Cinemachine"
+          ],
+          "codes": [
+            {
+              "format": [
+                "Go to Window->Package Manager.",
+                "Find and install {0} extension.",
+                "It's camera automation tools.",
+                "Go to Game Object->Cinemachine->Virtual Camera.",
+                "Set camera properties on Virtual Camera. (Camera props blocked)",
+                "Set FOV (Filed of view) on 20.",
+                "Set position on (0, 21.5, -21.3).",
+                "Set rotation on (46, 0, 0).",
+                "On Noise drop down, noise effect can be added, like hand held camera wobble.",
+                "Many virtual cameras can be used, to create effects like following camera fast (and many more)."
+              ],
+              "params": [
+                {
+                  "name": "Cinemachine",
+                  "desc": "Creates many types of virtual cameras. Works on top of unity camera, adds tons of functionality and automations."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Input System Refactor"
+          ],
+          "codes": [
+            {
+              "format": [
+                "Create empty obj, name GameInput, pos (0,0,0).",
+                "Create c# script, same name, atach it to obj.",
+                "Refactor input from Player class to GameInput.",
+                "Drag&Drop GameInput to Player field in editor.",
+                "Install package Input System.",
+                "Dont restart, go to Edit->Project Settings->Player->Configuration->Active Input Handling->Both.",
+                "In Assets create Input Actions file, name it PlayerInputActions, click it to open window.",
+                "Add action map, name it Player, add action Move, Action Type - Value, Control Type - Vector2.",
+                "On Move, delete binding, add Up/Down/Left/Right Composite, name it WASD.",
+                "Map directions to WSAD keys.",
+                "Save asset.",
+                "Select PlayerInputActions, check Generate c# class.",
+                "Add reference to it in GameInput class. Refactor to use it.",
+                "Add another composite for Arrow keys, save asset.",
+                "Add binding to connect gamepad, use generic to work with many types. (just listen for gamepad to register it)."
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Collision Detection"
           ],
           "codes": [
             {
