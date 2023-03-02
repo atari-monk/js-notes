@@ -74,8 +74,9 @@
             {
               "format": [
                 "Story {0}",
-                "1. User can switch beetween styles (none, desktop, mobile) <span class='mark-1'>5</span>",
-                "2. User can input data to form, to generate note json file. <span class='mark-1'>4</span>"
+                "1. User can switch beetween styles (none, desktop, mobile). <span class='mark-1'>5</span>",
+                "2. User has styles to chose from (none, desktop, mobile). <span class='mark-1'>5</span>",
+                "3. User can input data to form, to generate note json file. <span class='mark-1'>4</span>"
               ],
               "params": [
                 {
@@ -94,7 +95,8 @@
             {
               "format": [
                 "Feature {0}",
-                "1. Switch beetween styles (none, desktop, mobile) <span class='mark-1'>5</span>"
+                "1. Switch beetween styles (none, desktop, mobile). <span class='mark-1'>5</span>",
+                "2. Usefull Styles, none, desktop, mobile. <span class='mark-1'>5</span>"
               ],
               "params": [
                 {
@@ -104,11 +106,27 @@
               ]
             }
           ]
+        },
+        {
+          "text": [
+            "Notes"
+          ],
+          "codes": [
+            {
+              "format": [
+                "1. 3 css files added to html's. (none, desktop, mobile)",
+                "Simple links based control is added to html's.",
+                "On load, desktop style is enabled, others disabled.",
+                "On link click, coresponding style is enabled.",
+                "Very simple and works, that was the point."
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "summary": [
-    "In use for notes."
+    "App in use for making notes."
   ]
 }

@@ -13,21 +13,23 @@ export class Controller {
 
   #controlStyle() {
     try {
-      this.#disableCss("mobile");
-      const main = document.getElementById("main-css");
-      const mobile = document.getElementById("mobile-css");
-      main.addEventListener("click", () => this.#disableCss("mobile"));
-      mobile.addEventListener("click", () => this.#disableCss("main"));
+      this.#enableStyle("desktop");
+      const none = document.getElementById("style-none");
+      const desktop = document.getElementById("style-desktop");
+      const mobile = document.getElementById("style-mobile");
+      none.addEventListener("click", () => this.#enableStyle("none"));
+      desktop.addEventListener("click", () => this.#enableStyle("desktop"));
+      mobile.addEventListener("click", () => this.#enableStyle("mobile"));
     } catch (err) {}
   }
 
-  #disableCss(name) {
+  #enableStyle(name) {
     for (let i = 0; i < document.styleSheets.length; i++) {
       let file = document.styleSheets.item(i);
       file.href.includes(name)
-        ? (file.disabled = true)
-        : (file.disabled = false);
-      DEBUG && console.log(file.href, "disabled =", file.disabled);
+        ? (file.disabled = false)
+        : (file.disabled = true);
+      DEBUG && console.log(file.href, "enabled =", file.disabled === false);
     }
   }
 
