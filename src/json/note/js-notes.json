@@ -1,0 +1,114 @@
+{
+  "title": "js-notes",
+  "nav": [
+    {
+      "text": "Source"
+    },
+    {
+      "text": "Description"
+    },
+    {
+      "text": "Preconditions"
+    },
+    {
+      "text": "Notes"
+    },
+    {
+      "text": "Summary"
+    }
+  ],
+  "sections": {
+    "source": {
+      "text": "Source",
+      "links": [
+        {
+          "link": "https://github.com/atari-monk/js-notes",
+          "text": "My Repo"
+        },
+        {
+          "link": "https://atari-monk.github.io/js-notes/",
+          "text": "Notes page"
+        }
+      ]
+    },
+    "desc": {
+      "text": "Description",
+      "desc": [
+        "JavaScript app, mvc pattern, html generation, json data, minimalistic styles."
+      ]
+    },
+    "precondition": {
+      "text": "Preconditions",
+      "list": [
+        "VSCode",
+        "GitHub"
+      ]
+    }
+  },
+  "notes": [
+    {
+      "text": "Notes",
+      "points": [
+        {
+          "text": [
+            "History"
+          ],
+          "codes": [
+            {
+              "format": [
+                "First was HTML tutorial.",
+                "Then c# cli app generating html notes from json data.",
+                "It had 2 templates.",
+                "Page was made from it.",
+                "Then Javascript course.",
+                "After that javasctipt front app."
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "User Stories"
+          ],
+          "codes": [
+            {
+              "format": [
+                "Story {0}",
+                "1. User can switch beetween styles (none, desktop, mobile) <span class='mark-1'>5</span>",
+                "2. User can input data to form, to generate note json file. <span class='mark-1'>4</span>"
+              ],
+              "params": [
+                {
+                  "name": "0-5",
+                  "desc": "Priority from 0 to 5."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Features"
+          ],
+          "codes": [
+            {
+              "format": [
+                "Feature {0}",
+                "1. Switch beetween styles (none, desktop, mobile) <span class='mark-1'>5</span>"
+              ],
+              "params": [
+                {
+                  "name": "0-5",
+                  "desc": "Priority from 0 to 5."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": [
+    "In use for notes."
+  ]
+}

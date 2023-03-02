@@ -5,6 +5,12 @@
     },
     {
       "text": "Node.js"
+    },
+    {
+      "text": "Node.js"
+    },
+    {
+      "text": "My Projects"
     }
   ],
   "sections": [
@@ -51,6 +57,15 @@
         {
           "link": "notes.html?page=note/node-js-qs",
           "text": "Node js template app, deploy on azure"
+        }
+      ]
+    },
+    {
+      "text": "My Projects",
+      "links": [
+        {
+          "link": "notes.html?page=note/js-notes",
+          "text": "js-notes"
         }
       ]
     }
