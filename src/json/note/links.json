@@ -39,7 +39,10 @@
           "codes": [
             {
               "format": [
-                "{0}"
+                "{0}",
+                "{1}",
+                "{2}",
+                "{3}"
               ],
               "params": [
                 {
@@ -47,8 +50,16 @@
                   "desc": "Briliant 8 bit era game. Such a fun model of herd."
                 },
                 {
-                  "name": "",
-                  "desc": ""
+                  "name": "<a href=\"http://xproger.info/projects/OpenLara/\">Tomb Raider</a>",
+                  "desc": "Lara Croft is a fantasy of people."
+                },
+                {
+                  "name": "<a href=\"https: //www.retrogames.cz/play_022-NES.php?language=EN\">Contra</a>",
+                  "desc": "8 bit classic, in Poland, hit on PEGASUS console."
+                },
+                {
+                  "name": "<a href=\"https: //www.retrogames.cc/psx-games/final-fantasy-vii-usa-disc-1.html\">Final Fantasy VII</a>",
+                  "desc": "One of the best game of Playstation I period."
                 }
               ]
             }
@@ -94,17 +105,17 @@
         },
         {
           "text": [
-            "Comedy"
+            "Tools"
           ],
           "codes": [
             {
               "format": [
-                ""
+                "{0}"
               ],
               "params": [
                 {
-                  "name": "",
-                  "desc": ""
+                  "name": "<a href=\"https://translate.google.com/\">Google Translate</a>",
+                  "desc": "Text to Speach ability."
                 },
                 {
                   "name": "",

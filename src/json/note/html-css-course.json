@@ -26,12 +26,28 @@
           "text": "Source Tutorial"
         },
         {
+          "link": "https://github.com/atari-monk/css-tutorial",
+          "text": "My Repo"
+        },
+        {
           "link": "https://supersimple.dev/exercises/buttons",
-          "text": "Exersise 1"
+          "text": "Exercise Buttons"
+        },
+        {
+          "link": "https://supersimple.dev/exercises/text",
+          "text": "Exercise Text"
         },
         {
           "link": "https://www.rapidtables.com/convert/color/hex-to-rgb.html",
           "text": "Hex to RGB Color Converter"
+        },
+        {
+          "link": "https://www.freeformatter.com/html-escape.html",
+          "text": "Escape HTML"
+        },
+        {
+          "link": "https://www.w3schools.com/charsets/ref_html_entities_4.asp",
+          "text": "HTML 4 Entity"
         }
       ]
     },
@@ -65,7 +81,8 @@
                 "18-44; 2. Css Intro",
                 "44-x; 3. Hovers, Transitions, Shadows",
                 "1:03-1:17 4. Chrome DevTools & CSS Box Model",
-                "1:17-1:52 5. Text Styles"
+                "1:17-1:52 5. Text Styles",
+                "1:52-2:11 6. The HTML Structure"
               ]
             }
           ]
@@ -117,16 +134,6 @@
             {
               "format": [
                 "&lt;p&gt;Content/Text&lt;/p&gt;"
-              ],
-              "params": [
-                {
-                  "name": "",
-                  "desc": ""
-                },
-                {
-                  "name": "",
-                  "desc": ""
-                }
               ]
             }
           ]
@@ -139,16 +146,6 @@
             {
               "format": [
                 "&lt;button&gt;Content/Text&lt;/button&gt;"
-              ],
-              "params": [
-                {
-                  "name": "",
-                  "desc": ""
-                },
-                {
-                  "name": "",
-                  "desc": ""
-                }
               ]
             }
           ]
@@ -161,16 +158,6 @@
             {
               "format": [
                 "&lt;a {0} {1}&gt;Content/Text&lt;/a&gt;"
-              ],
-              "params": [
-                {
-                  "name": "href=\"\"",
-                  "desc": "url"
-                },
-                {
-                  "name": "target=\"_blank\"",
-                  "desc": "empty opens in same page, _blank in new tab"
-                }
               ]
             }
           ]
@@ -329,14 +316,42 @@
           "codes": [
             {
               "format": [
-                ""
+                "Css has all text properties.",
+                "{0}css text italic",
+                "General technique for creating visuals.",
+                "1. Create element with HTML.",
+                "2. Style with CSS one-by-one.",
+                "Set with to text to wrap it to next line.",
+                "{0}html entity middle dot",
+                "&amp;#183; is code for &#183;",
+                "Paragraph has default margin 14 on top, bottom.",
+                "{0}html entity checkmark",
+                "&amp;#10003; is code for &#10003;",
+                "Remove duplication of props in styles.",
+                "Create p style to target all p's.",
+                "Set font-family: Arial; in p style.",
+                "Remove font-family from all classes, to clean code.",
+                "Reset all p margins in p style, remove it from classes, for better code.",
+                "Selector that's more specific has higher priority. ",
+                "{0}html entity greater than",
+                "To style part of paragraph content use span (inline container with no style)",
+                "Other inline containers have style: strong, u.",
+                "Use margin-left on span to give text white space."
+              ],
+              "params": [
+                {
+                  "name": "_",
+                  "desc": "Google it"
+                }
               ]
-            },
-            {
-              "format": [
-                ""
-              ]
-            },
+            }
+          ]
+        },
+        {
+          "text": [
+            "The HTML Structure"
+          ],
+          "codes": [
             {
               "format": [
                 ""
