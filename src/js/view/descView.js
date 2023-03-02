@@ -7,7 +7,7 @@ export class DescView extends View {
     const desc = this._data;
     return `<section id="${desc.text.toLowerCase()}">
         <h2>${desc.text}</h2>
-        ${desc.desc.join("<br>")}
+        <p>${desc.desc.join("<br>")}</p>
       </section><hr>`;
   }
 }

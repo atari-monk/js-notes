@@ -8,8 +8,8 @@ export class SourceView extends View {
     return `<section id="${source.text.toLowerCase()}">
         <h2>${source.text}</h2>
         ${source.links.map(
-      (link) => `<a href="${link.link}">${link.text}</a><br>`
-    ).join("")}
+      (link) => `<a href="${link.link}">${link.text}</a>`
+    ).join("<br><br>")}
       </section><hr>`;
   }
 }

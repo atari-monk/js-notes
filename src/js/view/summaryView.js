@@ -8,7 +8,7 @@ export class SummaryView extends View {
     return `<section id="summary">
       <h2>Summary</h2>
       <summary>
-        ${data.join("<br>")}
+        <p>${data.join("<br>")}</p>
       </summary>
     </section>`;
   }

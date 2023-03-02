@@ -1,0 +1,113 @@
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+h1 {
+  margin-left: 20px;
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+.style-link {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-left: 0px;
+}
+
+.author-link {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-left: 0px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.btn-copy {
+  width: 20px;
+  height: 20px;
+  border-radius: 90%;
+  background-color: rgb(90, 85, 85);
+  margin-right: 3px;
+}
+
+.btn-copy:active {
+  background-color: gold;
+  box-shadow: 2px 2px gold;
+  transform: translateY(1px);
+}
+
+ol {
+  font-size: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 10;
+  margin-bottom: 10;
+  margin-left: 20px;
+}
+
+.code {
+  font-family: Consolas;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  margin-left: 6px;
+}
+
+.hide {
+  display: none;
+}
+
+/*mark1-7 newton color sequence ROYGBIV*/
+.mark-1 {
+  background-color: red;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.mark-2 {
+  background-color: orange;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.mark-3 {
+  background-color: yellow;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.mark-4 {
+  background-color: green;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.mark-5 {
+  background-color: blue;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.mark-6 {
+  background-color: indigo;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.mark-7 {
+  background-color: violet;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
