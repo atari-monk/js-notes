@@ -69,7 +69,8 @@
                 "1:23-1:43 10. Animations",
                 "1:43-1:49 11. Cinemachine",
                 "1:49-2:04 12. Input System Refactor",
-                "2:04-2:17 13. Collision Detection"
+                "2:04-2:17 13. Collision Detection",
+                "2:17-02:38 14. Clear Counter"
               ]
             }
           ]
@@ -439,6 +440,23 @@
         {
           "text": [
             "Collision Detection"
+          ],
+          "codes": [
+            {
+              "format": [
+                "Add Cube to game objects. See that collision with player dosent work yet.",
+                "Disable mesh collider on floor, it wont be used.",
+                "In script, add ray casting to stop movment on cube.",
+                "Use capsule cast to match shape of player.",
+                "Handle diagonal movment by moving in only x or z directions.",
+                "Normalize to move in same speed."
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Clear Counter"
           ],
           "codes": [
             {

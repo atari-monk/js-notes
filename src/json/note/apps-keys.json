@@ -133,7 +133,8 @@
           "codes": [
             {
               "format": [
-                "{0}"
+                "{0}",
+                "{1}"
               ],
               "params": [
                 {
@@ -141,8 +142,8 @@
                   "desc": "delete line"
                 },
                 {
-                  "name": "",
-                  "desc": ""
+                  "name": "ctrl + r, ctrl + r",
+                  "desc": "rename"
                 }
               ]
             }
