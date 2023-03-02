@@ -1,0 +1,123 @@
+{
+  "title": "Links",
+  "nav": [
+    {
+      "text": "Description"
+    },
+    {
+      "text": "Preconditions"
+    },
+    {
+      "text": "Notes"
+    },
+    {
+      "text": "Summary"
+    }
+  ],
+  "sections": {
+    "desc": {
+      "text": "Description",
+      "desc": [
+        "Content curated by me."
+      ]
+    },
+    "precondition": {
+      "text": "Preconditions",
+      "list": [
+        "Chrome"
+      ]
+    }
+  },
+  "notes": [
+    {
+      "text": "Notes",
+      "points": [
+        {
+          "text": [
+            "Classic Games"
+          ],
+          "codes": [
+            {
+              "format": [
+                "{0}"
+              ],
+              "params": [
+                {
+                  "name": "<a href=\"https://playclassic.games/games/puzzle-solving-dos-games-online/play-lemmings-online/play/\">Lemings</a>",
+                  "desc": "Briliant 8 bit era game. Such a fun model of herd."
+                },
+                {
+                  "name": "",
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Shows"
+          ],
+          "codes": [
+            {
+              "format": [
+                "{0}",
+                "{1}",
+                "{2}",
+                "{3}",
+                "{4}"
+              ],
+              "params": [
+                {
+                  "name": "<a href=\"https://www.youtube.com/@BohemianEagle/videos\">Jingles</a>",
+                  "desc": "Interesting guy with freindly voice will make second breakfast go down."
+                },
+                {
+                  "name": "<a href=\"https://www.youtube.com/@thetimdillonshow1847/videos\">Tim Dilon</a>",
+                  "desc": "Comedy prodigy will make your sunday louder and entertaining."
+                },
+                {
+                  "name": "<a href=\"https://www.youtube.com/@orangepill/videos\">Max & Stacy</a>",
+                  "desc": "Financial scandal experts will make you move to EL-Salvador."
+                },
+                {
+                  "name": "<a href=\"https://www.youtube.com/@StansberryMedia/videos\">Stansberry</a>",
+                  "desc": "Answears if rich people can be entertaining."
+                },
+                {
+                  "name": "<a href=\"https://www.youtube.com/@Goldsilver/videos\">Mike Maloney</a>",
+                  "desc": "Hard money seller."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Comedy"
+          ],
+          "codes": [
+            {
+              "format": [
+                ""
+              ],
+              "params": [
+                {
+                  "name": "",
+                  "desc": ""
+                },
+                {
+                  "name": "",
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": [
+    "Enjoy."
+  ]
+}
