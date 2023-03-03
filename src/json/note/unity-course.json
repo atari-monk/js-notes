@@ -70,7 +70,8 @@
                 "1:43-1:49 11. Cinemachine",
                 "1:49-2:04 12. Input System Refactor",
                 "2:04-2:17 13. Collision Detection",
-                "2:17-02:38 14. Clear Counter"
+                "2:17-02:38 14. Clear Counter",
+                "02:38-02:48 15. Interact Action, C# Events"
               ]
             }
           ]
@@ -457,6 +458,40 @@
         {
           "text": [
             "Clear Counter"
+          ],
+          "codes": [
+            {
+              "format": [
+                "Add empty object, name it ClearCounter. Reset it's Transform to zeros.",
+                "Add Visual to empty, drag it from PrefabsVisuals.",
+                "Add Box Collider to empty.",
+                "Scale Box Collider to match Visual (1.5, 1.5, 1.5)",
+                "Move it up Y 0.5, to match Visual.",
+                "Switch to Scene view.",
+                "Select empty, select tool rotate.",
+                "Hold ctrl and rotate 180 degres.",
+                "Refactor code. Add methods for Movment and Interactions, call them in Update. (Organize)",
+                "Then add code for interaction with ClearCounter, simillar as ray casting physics was written.",
+                "I moved Scripts folder to root Assets.",
+                "Create Prefabs folder in root Assets.",
+                "Create prefab by drag&drop from Hierarchy to Prefabs folder.",
+                "Duplicate ClearCounter prefab, move it so it dosent collide with original.",
+                "Create C# script for ClearCounter.",
+                "Select Prefab from Project and atach file to all of it's instances.",
+                "Alternativlly, select prefab instance form Hierachy and click Open.",
+                "Scene will focus on prefab, atach script, exit to scene, save prefab.",
+                "Unity Tags are horrible, dont use that. (string)",
+                "In code of ray casting, use LayerMask of objects to narow objects you check.",
+                "Add editor property for layer, to player.",
+                "Open Prefab, add layer, name it Counters, save it only to prefab (not children).",
+                "Add Counters layer to player editor fieled, test interaction."
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Interact Action, C# Events"
           ],
           "codes": [
             {

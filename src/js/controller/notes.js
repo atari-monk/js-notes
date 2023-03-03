@@ -25,6 +25,7 @@ class NotesController extends Controller {
       notesView.render(data.notes);
       notesView.addHandlerClick(this.#copy);
       summaryView.render(data.summary);
+      DEBUG && notesView._scrollToBottom();
     } catch (err) {}
   }
 

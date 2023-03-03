@@ -21,4 +21,9 @@ export class View {
   _clear() {
     this._parentElement.innerHTML = "";
   }
+
+  _scrollToBottom() {
+    window.scrollTo(0, document.body.scrollHeight);
+    console.log("scrolling to bottom!");
+  }
 }
