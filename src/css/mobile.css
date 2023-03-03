@@ -36,10 +36,10 @@ a {
 .btn-copy {
   border-radius: 90%;
   background-color: rgba(90, 85, 85, 0.5);
-  margin-left: -20px;
+  margin-left: -35px;
   display: inline;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 .btn-copy:active {
@@ -70,11 +70,8 @@ ol {
 li {
   font-size: 20px;
   margin-bottom: 10px;
+  margin-left: 45px;
 }
-
-/* .horizontal {
-  display: inline;
-} */
 
 .precondition {
   margin-top: 0px;
