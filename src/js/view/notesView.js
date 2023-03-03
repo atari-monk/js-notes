@@ -36,10 +36,15 @@ export class NotesView extends View {
   }
 
   #getButtons(code, i, j) {
-    return code.format.map((cf, k) => `<button class='btn-copy' id="code${i + 1}${j + 1}${k + 1}"></button>
+    return code.format.map((cf, k) => `
         <p class='code' id="code${i + 1}${j + 1}${k + 1}">
+          ${this.#getButton(i, j, k)}
           ${code.params ? this.#getCodeText(cf, code.params) : cf}                            
         </p>`).join("<br>");
+  }
+
+  #getButton(i, j, k) {
+    return `<button class='btn-copy' id="code${i + 1}${j + 1}${k + 1}"></button>`;
   }
 
   #getAside(params) {
