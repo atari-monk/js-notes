@@ -39,6 +39,7 @@ a {
   border-radius: 90%;
   background-color: rgba(90, 85, 85, 0.5);
   margin-left: -20px;
+  display: inline;
 }
 
 .btn-copy:active {
@@ -107,10 +108,14 @@ p {
 }
 
 .code {
-  font-family: Consolas;
+  font-family: Arial, Helvetica, sans-serif;
   color: rgb(255, 255, 255);
-  font-size: 18px;
+  font-size: 19px;
   margin-left: 6px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline;
+  line-height: 20px;
 }
 
 .hide {
