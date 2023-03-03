@@ -48,21 +48,20 @@
         {
           "link": "https://www.w3schools.com/charsets/ref_html_entities_4.asp",
           "text": "HTML 4 Entity"
+        },
+        {
+          "link": "https: //fonts.google.com/",
+          "text": "Google Fonts"
         }
       ]
     },
     "desc": {
       "text": "Description",
-      "desc": [
-        "HTML & CSS"
-      ]
+      "desc": ["HTML & CSS"]
     },
     "precondition": {
       "text": "Preconditions",
-      "list": [
-        "Chrome",
-        "VSCode"
-      ]
+      "list": ["Chrome", "VSCode"]
     }
   },
   "notes": [
@@ -70,9 +69,7 @@
       "text": "Notes",
       "points": [
         {
-          "text": [
-            "Timestamps"
-          ],
+          "text": ["Timestamps"],
           "codes": [
             {
               "format": [
@@ -82,16 +79,14 @@
                 "44-x; 3. Hovers, Transitions, Shadows",
                 "1:03-1:17 4. Chrome DevTools & CSS Box Model",
                 "1:17-1:52 5. Text Styles",
-                "1:52-2:11 6. The HTML Structure"
+                "1:52-2:11 6. The HTML Structure",
+                "2:11-2:26 7. Images and Text Boxes"
               ]
             }
           ]
         },
         {
-          "text": [
-            "Html Intro",
-            "Html Syntax"
-          ],
+          "text": ["Html Intro/Syntax"],
           "codes": [
             {
               "format": [
@@ -127,46 +122,31 @@
           ]
         },
         {
-          "text": [
-            "Paragraph Element"
-          ],
+          "text": ["Paragraph Element"],
           "codes": [
             {
-              "format": [
-                "&lt;p&gt;Content/Text&lt;/p&gt;"
-              ]
+              "format": ["&lt;p&gt;Content/Text&lt;/p&gt;"]
             }
           ]
         },
         {
-          "text": [
-            "Button Element"
-          ],
+          "text": ["Button Element"],
           "codes": [
             {
-              "format": [
-                "&lt;button&gt;Content/Text&lt;/button&gt;"
-              ]
+              "format": ["&lt;button&gt;Content/Text&lt;/button&gt;"]
             }
           ]
         },
         {
-          "text": [
-            "Anchor Element"
-          ],
+          "text": ["Anchor Element"],
           "codes": [
             {
-              "format": [
-                "&lt;a {0} {1}&gt;Content/Text&lt;/a&gt;"
-              ]
+              "format": ["&lt;a {0} {1}&gt;Content/Text&lt;/a&gt;"]
             }
           ]
         },
         {
-          "text": [
-            "Css Intro",
-            "CSS Syntax"
-          ],
+          "text": ["Css Intro/Syntax"],
           "codes": [
             {
               "format": [
@@ -207,9 +187,7 @@
           ]
         },
         {
-          "text": [
-            "Hovers, Transitions, Shadows"
-          ],
+          "text": ["Hovers, Transitions, Shadows"],
           "codes": [
             {
               "format": [
@@ -265,9 +243,7 @@
           ]
         },
         {
-          "text": [
-            "Chrome DevTools & CSS Box Model"
-          ],
+          "text": ["Chrome DevTools & CSS Box Model"],
           "codes": [
             {
               "format": [
@@ -310,9 +286,7 @@
           ]
         },
         {
-          "text": [
-            "Text Styles"
-          ],
+          "text": ["Text Styles"],
           "codes": [
             {
               "format": [
@@ -348,14 +322,28 @@
           ]
         },
         {
-          "text": [
-            "The HTML Structure"
-          ],
+          "text": ["The HTML Structure"],
           "codes": [
             {
               "format": [
-                ""
+                "{0}",
+                "Use google fonts in text page.",
+                "Select font, it's styles, copy link, use it in head."
               ],
+              "params": [
+                {
+                  "name": "!",
+                  "desc": "and Tab in VSCode for html template"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": ["Images and Text Boxes"],
+          "codes": [
+            {
+              "format": [""],
               "params": [
                 {
                   "name": "",
@@ -372,7 +360,5 @@
       ]
     }
   ],
-  "summary": [
-    "In progress."
-  ]
+  "summary": ["In progress."]
 }
