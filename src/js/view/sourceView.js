@@ -9,7 +9,7 @@ export class SourceView extends View {
         <h2>${source.text}</h2>
         ${source.links.map(
       (link) => `<a href="${link.link}">${link.text}</a>`
-    ).join("<br><br>")}
+    ).join("<br>")}
       </section><hr>`;
   }
 }

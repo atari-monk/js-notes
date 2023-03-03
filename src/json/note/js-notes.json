@@ -34,7 +34,7 @@
     "desc": {
       "text": "Description",
       "desc": [
-        "JavaScript app, mvc pattern, html generation, json data, minimalistic styles."
+        "JavaScript front app, mvc pattern, html generation, json data, minimalistic styles."
       ]
     },
     "precondition": {
@@ -76,7 +76,8 @@
                 "Story {0}",
                 "1. User can switch beetween styles (none, desktop, mobile). <span class='mark-1'>5</span>",
                 "2. User has styles to chose from (none, desktop, mobile). <span class='mark-1'>5</span>",
-                "3. User can input data to form, to generate note json file. <span class='mark-1'>4</span>"
+                "3. User has color markers cycling from 1-7 in a loop, used on params in notes. <span class='mark-1'>5</span>",
+                "4. User can input data to form, to generate note json file. <span class='mark-1'>4</span>"
               ],
               "params": [
                 {
@@ -96,7 +97,8 @@
               "format": [
                 "Feature {0}",
                 "1. Switch beetween styles (none, desktop, mobile). <span class='mark-1'>5</span>",
-                "2. Usefull Styles, none, desktop, mobile. <span class='mark-1'>5</span>"
+                "2. Usefull Styles, none, desktop, mobile. <span class='mark-1'>5</span>",
+                "3. Color markers, from 1-7, looping on params in notes. <span class='mark-1'>5</span>"
               ],
               "params": [
                 {
@@ -118,7 +120,11 @@
                 "Simple links based control is added to html's.",
                 "On load, desktop style is enabled, others disabled.",
                 "On link click, coresponding style is enabled.",
-                "Very simple and works, that was the point."
+                "Very simple and works, that was the point.",
+                "2. Very Minimalistic Desktop style added.",
+                "3. There can be n params with name and description, used in code section.",
+                "Each param name is marked by color form 1 to 7, after that from 1 again in loop.",
+                "Each param description in detail aside have matching color marker."
               ]
             }
           ]

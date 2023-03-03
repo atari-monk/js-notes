@@ -7,7 +7,7 @@ export class LinksView extends View {
     return this._data
       .map(
         (section) => `<article id="${section.text.toLowerCase()}">
-        <h2>${section.text}</h2>
+        <h3>${section.text}</h3>
         <section class="list-point">
           <ol>
             <ul>
@@ -15,7 +15,7 @@ export class LinksView extends View {
             .map(
               (link) =>
                 `<li class="list-point">
-                  <a href="${link.link}">${link.text}</a>
+                  <a class='nav-link' href="${link.link}">${link.text}</a>
                  </li>`
             )
             .join("")}

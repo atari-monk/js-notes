@@ -11,30 +11,34 @@ h2 {
   margin-left: 20px;
 }
 
-.style-link {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  margin-left: 0px;
-}
-
-.author-link {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  margin-left: 0px;
+h3 {
+  margin-left: 20px;
 }
 
 a {
   color: rgb(255, 255, 255);
   font-size: 20px;
+  margin-left: 20px;
+}
+
+.style-btn-link {
+  margin-left: 0px;
+}
+
+.nav-link {
   margin-left: 10px;
+}
+
+.author-link {
+  margin-left: 0px;
 }
 
 .btn-copy {
   width: 20px;
   height: 20px;
   border-radius: 90%;
-  background-color: rgb(90, 85, 85);
-  margin-right: 3px;
+  background-color: rgba(90, 85, 85, 0.5);
+  margin-left: -20px;
 }
 
 .btn-copy:active {
@@ -43,19 +47,63 @@ a {
   transform: translateY(1px);
 }
 
+ul {
+  font-size: 20px;
+  margin-left: -30px;
+}
+
 ol {
   font-size: 20px;
 }
 
+.navigation {
+  margin-left: -30px;
+}
+
+.preconditions {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
 li {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
+.horizontal {
+  display: inline;
+}
+
+.precondition {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  line-height: 0px;
+}
+
 p {
+  color: rgb(255, 255, 255);
   font-size: 20px;
-  margin-top: 10;
-  margin-bottom: 10;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.description {
   margin-left: 20px;
+}
+
+.summary {
+  margin-left: 20px;
+}
+
+.author {
+  margin-left: 20px;
+}
+
+.back-top {
+  margin-left: 0px;
 }
 
 .code {
@@ -72,42 +120,35 @@ p {
 /*mark1-7 newton color sequence ROYGBIV*/
 .mark-1 {
   background-color: red;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
+  color: white;
 }
 
 .mark-2 {
   background-color: orange;
   color: rgb(0, 0, 0);
-  font-weight: bold;
 }
 
 .mark-3 {
   background-color: yellow;
   color: rgb(0, 0, 0);
-  font-weight: bold;
 }
 
 .mark-4 {
   background-color: green;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
+  color: white;
 }
 
 .mark-5 {
   background-color: blue;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
+  color: white;
 }
 
 .mark-6 {
   background-color: indigo;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
+  color: white;
 }
 
 .mark-7 {
   background-color: violet;
   color: rgb(0, 0, 0);
-  font-weight: bold;
 }

@@ -7,15 +7,15 @@ export class PreconditionView extends View {
     const item = this._data;
     return `<section id="${item.text.toLowerCase()}">
         <h2>${item.text}</h2>
-        <ol>
+        <ul class='preconditions'>
         ${item.list
-          .map(
-            (point) => `<li>
-            ${point}
+        .map(
+          (point) => `<li>
+            <p>${point}</p>
           </li>`
-          )
-          .join("<br>")}
-        </ol>
+        )
+        .join("")}
+        </ul>
       </section><hr>`;
   }
 }

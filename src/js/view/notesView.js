@@ -43,16 +43,22 @@ export class NotesView extends View {
   }
 
   #getAside(params) {
+    let j = 1;
     return `<aside>
               <details>
                 <summary>details</summary>
                 ${params
-                  ?.map(
-                    (param, i) => `<p>
-                  <mark class="mark-${i + 1}">${param?.desc}</mark>
-                </p>`
-                  )
-                  .join("")}
+        ?.map(
+          (param, i) => {
+            const detail = `<p>
+              <mark class="mark-${j}">${param?.desc}</mark>
+            </p>`
+            j++;
+            if (i > 0 && i % 6 === 0) j = 1;
+            return detail;
+          }
+        )
+        .join("")}
               </details>
             </aside>`;
   }
@@ -63,8 +69,14 @@ export class NotesView extends View {
   }
 
   #getParams(params) {
+    let j = 1;
     return params.map(
-      (param, i) => `<mark class="mark-${i + 1}">${param?.name}</mark>`
+      (param, i) => { 
+        const mark = `<mark class="mark-${j}">${param?.name}</mark>`;
+        j++;
+        if (i > 0 && i % 6 === 0) j = 1;
+        return mark;
+      }
     );
   }
 
