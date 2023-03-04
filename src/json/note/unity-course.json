@@ -71,7 +71,8 @@
                 "1:49-2:04 12. Input System Refactor",
                 "2:04-2:17 13. Collision Detection",
                 "2:17-02:38 14. Clear Counter",
-                "02:38-02:48 15. Interact Action, C# Events"
+                "02:38-02:48 15. Interact Action, C# Events",
+                "02:48-03:11 16. Selected Counter Visual, Singleton Pattern"
               ]
             }
           ]
@@ -496,17 +497,15 @@
           "codes": [
             {
               "format": [
-                ""
-              ],
-              "params": [
-                {
-                  "name": "",
-                  "desc": ""
-                },
-                {
-                  "name": "",
-                  "desc": ""
-                }
+                "Double click PlayerInputActions, add Interact action.",
+                "Select Action Type - Button.",
+                "On default binding, go to Path, Listen, assign E key. Save Asset.",
+                "For movement it makes sense to handle it in every frame Update method.",
+                "For less frequent actions c# events are used.",
+                "In GameInput.Awake register callback for action.",
+                "playerInputActions.Player.Interact.performed += Interact_performed;",
+                "Create event in GameInput. Invoke it on Interact callback. Subscribe to it in Player.",
+                "Create callback in Player, copy interact code to it, comment out Interact action in other place, test E btn to interact."
               ]
             }
           ]
