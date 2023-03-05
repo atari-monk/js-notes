@@ -1,10 +1,10 @@
-import { PROD_MODE, LOCAL, PROD } from "./config.js";
+import { CONNECTION } from "./config.js";
 
 class Model {
   #host;
 
   constructor() {
-    this.#host = PROD_MODE ? PROD : LOCAL;
+    this.#host = CONNECTION;
   }
 
   async getPage(page) {
