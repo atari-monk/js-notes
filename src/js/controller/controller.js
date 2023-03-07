@@ -2,6 +2,7 @@ import { DEBUG } from "../config.js";
 
 export class Controller {
   _page;
+  _type;
 
   constructor() {
     this._addHandlerLoad(this.#controlStyle.bind(this));
@@ -13,17 +14,17 @@ export class Controller {
 
   #controlStyle() {
     try {
-      this.#enableStyle("desktop");
+      this._enableStyle("desktop");
       const none = document.getElementById("style-none");
       const desktop = document.getElementById("style-desktop");
       const mobile = document.getElementById("style-mobile");
-      none.addEventListener("click", () => this.#enableStyle("none"));
-      desktop.addEventListener("click", () => this.#enableStyle("desktop"));
-      mobile.addEventListener("click", () => this.#enableStyle("mobile"));
+      none.addEventListener("click", () => this._enableStyle("none"));
+      desktop.addEventListener("click", () => this._enableStyle("desktop"));
+      mobile.addEventListener("click", () => this._enableStyle("mobile"));
     } catch (err) {}
   }
 
-  #enableStyle(name) {
+  _enableStyle(name) {
     for (let i = 0; i < document.styleSheets.length; i++) {
       let file = document.styleSheets.item(i);
       file.href.includes(name)
@@ -37,6 +38,7 @@ export class Controller {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     this._page = urlParams.get("page");
+    this._type = urlParams.get("type");
     DEBUG && console.log(this._page);
   }
 }

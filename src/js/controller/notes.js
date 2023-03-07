@@ -5,6 +5,7 @@ import emptyView from "../view/emptyView.js";
 import navView from "../view/navView.js";
 import metaView from "../view/metaView.js";
 import notesView from "../view/notesView.js";
+import notesView2 from "../view/notesView2.js";
 import summaryView from "../view/summaryView.js";
 
 class NotesController extends Controller {
@@ -22,7 +23,12 @@ class NotesController extends Controller {
       this.#setTitle(data.title);
       navView.render(data.nav);
       metaView.render(data.sections);
-      notesView.render(data.notes);
+      if (!this._type)
+        notesView.render(data.notes);
+      else if (this._type === 'v2') {
+        this._enableStyle("style");
+        notesView2.generateTemplate(data.notes);
+      }
       notesView.addHandlerClick(this.#copy);
       summaryView.render(data.summary);
       DEBUG && notesView._scrollToBottom();
