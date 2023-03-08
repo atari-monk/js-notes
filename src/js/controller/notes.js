@@ -2,14 +2,11 @@ import { DEBUG } from "../config.js";
 import { Controller } from "./controller.js";
 import model from "../model.js";
 import emptyView from "../view/emptyView.js";
-import navView from "../view/navView.js";
-import metaView from "../view/metaView.js";
-import notesView from "../view/notesView.js";
-import notesView2 from "../view/notesView2.js";
-import summaryView from "../view/summaryView.js";
+import generateRenderer from "../renderer/generate/noteRenderer.js";
+import templateRenderer from "../renderer/template/noteRenderer.js";
 
 class NotesController extends Controller {
-  
+
   constructor() {
     super();
     emptyView.addHandlerRender(this.#controlNotes.bind(this));
@@ -20,31 +17,11 @@ class NotesController extends Controller {
       this._setPage();
       const data = await model.getPage(this._page);
       DEBUG && console.log(data);
-      this.#setTitle(data.title);
-      navView.render(data.nav);
-      metaView.render(data.sections);
       if (!this._type)
-        notesView.render(data.notes);
-      else if (this._type === 'v2') {
-        this._enableStyle("style");
-        notesView2.generateTemplate(data.notes);
-      }
-      notesView.addHandlerClick(this.#copy);
-      summaryView.render(data.summary);
-      DEBUG && notesView._scrollToBottom();
-    } catch (err) {}
-  }
-
-  #setTitle(title) {
-    const titleEl = document.querySelector(".title");
-    titleEl.innerText = title;
-    titleEl.classList.remove("hide");
-  }
-
-  #copy(ev) {
-    const id = ev.srcElement.id;
-    const copyText = document.querySelectorAll(`#${id}`)[1];
-    navigator.clipboard.writeText(copyText.innerText);
+        generateRenderer.render(data);
+      else
+        templateRenderer.render(data, emptyView);
+    } catch (err) { }
   }
 }
 

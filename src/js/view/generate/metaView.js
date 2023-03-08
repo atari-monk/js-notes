@@ -1,7 +1,7 @@
 import { View } from "./view.js";
-import sourceView from "../view/sourceView.js";
-import descView from "../view/descView.js";
-import preconditionView from "../view/preconditionView.js";
+import sourceView from "./sourceView.js";
+import descView from "./descView.js";
+import preconditionView from "./preconditionView.js";
 
 export class MetaView extends View {
   _parentElement = document.querySelector(".meta-view");

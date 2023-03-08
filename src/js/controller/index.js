@@ -2,8 +2,7 @@ import { DEBUG } from "../config.js";
 import { Controller } from "./controller.js";
 import model from "../model.js";
 import emptyView from "../view/emptyView.js";
-import navView from "../view/navView.js";
-import linksList from "../view/linksView.js";
+import indexRenderer from "../renderer/generate/indexRenderer.js";
 
 class IndexController extends Controller {
  
@@ -17,8 +16,7 @@ class IndexController extends Controller {
       this._setPage();
       const data = await model.getPage(this._page ?? 'index/index');
       DEBUG && console.log(data);
-      navView.render(data.nav);
-      linksList.render(data.sections);
+      indexRenderer.render(data);
     } catch (err) {}
   }
 }

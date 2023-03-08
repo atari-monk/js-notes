@@ -1,6 +1,5 @@
-import { View } from "./view.js";
 
-export class NotesView2 extends View {
+export class NotesView {
 
   generateTemplate(data) {
     console.log('NotesView2');
@@ -42,4 +41,4 @@ export class NotesView2 extends View {
   }
 }
 
-export default new NotesView2();
+export default new NotesView();
