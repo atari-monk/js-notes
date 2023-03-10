@@ -1,5 +1,5 @@
 import { View } from "./view.js";
-import * as tool from "./../../tool.js";
+import * as tool from "./../tool.js";
 
 export class NotesView extends View {
   _parentElement = document.querySelector(".notes-view");
